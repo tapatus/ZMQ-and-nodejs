@@ -11,164 +11,218 @@ Cliente 6
 Cliente 7
 Cliente 8
 Cliente 9
-El worker worker3 ha enviado el primero mensaje -> ready
-El cliente client7 conectado a tcp:// localhost:5555
-Cliente -> client7 envia el mensaje -> ClientMSG ready true
-El cliente client1 conectado a tcp:// localhost:5555
-Cliente -> client1 envia el mensaje -> ClientMSG ready true
-El worker worker2 ha enviado el primero mensaje -> ready
-El cliente client6 conectado a tcp:// localhost:5555
-Cliente -> client6 envia el mensaje -> ClientMSG ready true
-El cliente client3 conectado a tcp:// localhost:5555
-Cliente -> client3 envia el mensaje -> ClientMSG ready true
-El cliente client2 conectado a tcp:// localhost:5555
-Cliente -> client2 envia el mensaje -> ClientMSG ready true
-El cliente client5 conectado a tcp:// localhost:5555
-Cliente -> client5 envia el mensaje -> ClientMSG ready true
 El worker worker1 ha enviado el primero mensaje -> ready
-El cliente client9 conectado a tcp:// localhost:5555
-Cliente -> client9 envia el mensaje -> ClientMSG ready true
 El cliente client8 conectado a tcp:// localhost:5555
 Cliente -> client8 envia el mensaje -> ClientMSG ready true
-Frontend en puerto 5555
-Backend en puerto 5556
+El cliente client6 conectado a tcp:// localhost:5555
+Cliente -> client6 envia el mensaje -> ClientMSG ready true
+El cliente client9 conectado a tcp:// localhost:5555
+Cliente -> client9 envia el mensaje -> ClientMSG ready true
+El cliente client7 conectado a tcp:// localhost:5555
+Cliente -> client7 envia el mensaje -> ClientMSG ready true
+El worker worker2 ha enviado el primero mensaje -> ready
 El cliente client10 conectado a tcp:// localhost:5555
 Cliente -> client10 envia el mensaje -> ClientMSG ready true
-Request de cliente -> client9 con texto -> ClientMSG ready true
-	 Parte 0: client9
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Request de cliente -> client5 con texto -> ClientMSG ready true
-	 Parte 0: client5
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Request de cliente -> client10 con texto -> ClientMSG ready true
-	 Parte 0: client10
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-El cliente client4 conectado a tcp:// localhost:5555
+El cliente client2 conectado a tcp:// localhost:5555
+Cliente -> client2 envia el mensaje -> ClientMSG ready true
 Cliente -> client4 envia el mensaje -> ClientMSG ready true
-Request de cliente -> client4 con texto -> ClientMSG ready true
-	 Parte 0: client4
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
+Frontend en puerto 5555
+Backend en puerto 5556
+El worker worker3 ha enviado el primero mensaje -> ready
 Request de worker -> worker3 con texto -> ready
 	 Parte 0: worker3
 	 Parte 1: 
 	 Parte 2: ready
-Request de cliente -> client7 con texto -> ClientMSG ready true
-	 Parte 0: client7
+El cliente client5 conectado a tcp:// localhost:5555
+Cliente -> client5 envia el mensaje -> ClientMSG ready true
+Request de cliente -> client5 con texto -> ClientMSG ready true
+	 Parte 0: client5
 	 Parte 1: 
 	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client7 al worker -> worker3 usando el backend
-El worker -> worker3 ha recibido trabajo del cliente -> client7
-El worker -> worker3 envia la repuesta: 
+Enviando peticion de cliente -> client5 al worker -> worker3 usando el backend
+El worker -> worker3 ha recibido trabajo del cliente -> client5
+El worker -> worker3ya lleva 1 trabajos: 
 Request de worker -> worker3 con texto -> ok
 	 Parte 0: worker3
 	 Parte 1: 
-	 Parte 2: client7
+	 Parte 2: client5
 	 Parte 3: 
 	 Parte 4: ok
-Enviando respuesta de worker -> worker3 al cliente -> ok usando el frontend
-	 Parte 0: client7
+Enviando respuesta de worker -> worker3 al cliente -> client5 usando el frontend
+	 Parte 0: client5
 	 Parte 1: 
 	 Parte 2: ok
-Cliente -> client7 ha recibido respuesta ok
+El cliente client1 conectado a tcp:// localhost:5555
+Cliente -> client1 envia el mensaje -> ClientMSG ready true
+Cliente -> client5 ha recibido respuesta ok
 Request de cliente -> client1 con texto -> ClientMSG ready true
 	 Parte 0: client1
 	 Parte 1: 
 	 Parte 2: ClientMSG ready true
 Enviando peticion de cliente -> client1 al worker -> worker3 usando el backend
 El worker -> worker3 ha recibido trabajo del cliente -> client1
-El worker -> worker3 envia la repuesta: 
+El worker -> worker3ya lleva 2 trabajos: 
+El cliente client3 conectado a tcp:// localhost:5555
 Request de worker -> worker3 con texto -> ok
 	 Parte 0: worker3
 	 Parte 1: 
 	 Parte 2: client1
+Cliente -> client3 envia el mensaje -> ClientMSG ready true
 	 Parte 3: 
 	 Parte 4: ok
-Enviando respuesta de worker -> worker3 al cliente -> ok usando el frontend
+Enviando respuesta de worker -> worker3 al cliente -> client1 usando el frontend
 	 Parte 0: client1
 	 Parte 1: 
 	 Parte 2: ok
-Cliente -> client1 ha recibido respuesta ok
 Request de cliente -> client3 con texto -> ClientMSG ready true
 	 Parte 0: client3
 	 Parte 1: 
 	 Parte 2: ClientMSG ready true
 Enviando peticion de cliente -> client3 al worker -> worker3 usando el backend
 El worker -> worker3 ha recibido trabajo del cliente -> client3
-El worker -> worker3 envia la repuesta: 
+El worker -> worker3ya lleva 3 trabajos: 
 Request de worker -> worker3 con texto -> ok
 	 Parte 0: worker3
 	 Parte 1: 
 	 Parte 2: client3
 	 Parte 3: 
 	 Parte 4: ok
-Enviando respuesta de worker -> worker3 al cliente -> ok usando el frontend
+Enviando respuesta de worker -> worker3 al cliente -> client3 usando el frontend
 	 Parte 0: client3
 	 Parte 1: 
 	 Parte 2: ok
 Cliente -> client3 ha recibido respuesta ok
-Request de cliente -> client2 con texto -> ClientMSG ready true
-	 Parte 0: client2
+Request de cliente -> client9 con texto -> ClientMSG ready true
+	 Parte 0: client9
 	 Parte 1: 
 	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client2 al worker -> worker3 usando el backend
-El worker -> worker3 ha recibido trabajo del cliente -> client2
-El worker -> worker3 envia la repuesta: 
+Enviando peticion de cliente -> client9 al worker -> worker3 usando el backend
+El worker -> worker3 ha recibido trabajo del cliente -> client9
+El worker -> worker3ya lleva 4 trabajos: 
 Request de worker -> worker3 con texto -> ok
 	 Parte 0: worker3
 	 Parte 1: 
-	 Parte 2: client2
+	 Parte 2: client9
 	 Parte 3: 
 	 Parte 4: ok
-Enviando respuesta de worker -> worker3 al cliente -> ok usando el frontend
-	 Parte 0: client2
+Enviando respuesta de worker -> worker3 al cliente -> client9 usando el frontend
+	 Parte 0: client9
 	 Parte 1: 
 	 Parte 2: ok
-Cliente -> client2 ha recibido respuesta ok
-Request de worker -> worker2 con texto -> ready
-	 Parte 0: worker2
-	 Parte 1: 
-	 Parte 2: ready
-Request de cliente -> client8 con texto -> ClientMSG ready true
-	 Parte 0: client8
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client8 al worker -> worker2 usando el backend
-El worker -> worker2 ha recibido trabajo del cliente -> client8
-El worker -> worker2 envia la repuesta: 
-Request de worker -> worker2 con texto -> ok
-	 Parte 0: worker2
-	 Parte 1: 
-	 Parte 2: client8
-	 Parte 3: 
-	 Parte 4: ok
-Enviando respuesta de worker -> worker2 al cliente -> ok usando el frontend
-	 Parte 0: client8
-	 Parte 1: 
-	 Parte 2: ok
-Cliente -> client8 ha recibido respuesta ok
-Request de cliente -> client6 con texto -> ClientMSG ready true
-	 Parte 0: client6
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client6 al worker -> worker2 usando el backend
-El worker -> worker2 ha recibido trabajo del cliente -> client6
-El worker -> worker2 envia la repuesta: 
-Request de worker -> worker2 con texto -> ok
-	 Parte 0: worker2
-	 Parte 1: 
-	 Parte 2: client6
-	 Parte 3: 
-	 Parte 4: ok
-Enviando respuesta de worker -> worker2 al cliente -> ok usando el frontend
-	 Parte 0: client6
-	 Parte 1: 
-	 Parte 2: ok
-Cliente -> client6 ha recibido respuesta ok
+Cliente -> client9 ha recibido respuesta ok
 Request de worker -> worker1 con texto -> ready
 	 Parte 0: worker1
 	 Parte 1: 
 	 Parte 2: ready
+Request de cliente -> client2 con texto -> ClientMSG ready true
+	 Parte 0: client2
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+Enviando peticion de cliente -> client2 al worker -> worker1 usando el backend
+El worker -> worker1 ha recibido trabajo del cliente -> client2
+El worker -> worker1ya lleva 1 trabajos: 
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client2
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client2 usando el frontend
+	 Parte 0: client2
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client2 ha recibido respuesta ok
+Request de cliente -> client10 con texto -> ClientMSG ready true
+	 Parte 0: client10
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+Enviando peticion de cliente -> client10 al worker -> worker1 usando el backend
+El worker -> worker1 ha recibido trabajo del cliente -> client10
+El worker -> worker1ya lleva 2 trabajos: 
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client10
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client10 usando el frontend
+	 Parte 0: client10
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client10 ha recibido respuesta ok
+Request de cliente -> client6 con texto -> ClientMSG ready true
+	 Parte 0: client6
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+Enviando peticion de cliente -> client6 al worker -> worker1 usando el backend
+El worker -> worker1 ha recibido trabajo del cliente -> client6
+El worker -> worker1ya lleva 3 trabajos: 
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client6
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client6 usando el frontend
+	 Parte 0: client6
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client6 ha recibido respuesta ok
+Request de cliente -> client8 con texto -> ClientMSG ready true
+	 Parte 0: client8
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+Enviando peticion de cliente -> client8 al worker -> worker1 usando el backend
+Request de cliente -> client4 con texto -> ClientMSG ready true
+	 Parte 0: client4
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+Enviando peticion de cliente -> client4 al worker -> worker3 usando el backend
+El worker -> worker1 ha recibido trabajo del cliente -> client8
+El worker -> worker1ya lleva 4 trabajos: 
+El worker -> worker3 ha recibido trabajo del cliente -> client4
+El worker -> worker3ya lleva 5 trabajos: 
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client8
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client8 usando el frontend
+	 Parte 0: client8
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client4
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client4 usando el frontend
+	 Parte 0: client4
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client8 ha recibido respuesta ok
+Cliente -> client4 ha recibido respuesta ok
+Request de worker -> worker2 con texto -> ready
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: ready
+Request de cliente -> client7 con texto -> ClientMSG ready true
+	 Parte 0: client7
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+Enviando peticion de cliente -> client7 al worker -> worker2 usando el backend
+El worker -> worker2 ha recibido trabajo del cliente -> client7
+El worker -> worker2ya lleva 1 trabajos: 
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client7
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client7 usando el frontend
+	 Parte 0: client7
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client7 ha recibido respuesta ok

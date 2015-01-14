@@ -14,32 +14,28 @@ var zmq = require('zmq'),
     id = args[3], //identificacion de worker
     td = args[4], //texto de disponibilidad
     ta = args[5], //texto de atencion
-    bul = args[6]; //boolean modo verbose
+    bul = args[6], //boolean modo verbose
+    jobs = 0;
 
 
 responder.identity = id;
 responder.connect('tcp://' + be);
 console.log('El worker ' + id + ' ha enviado el primero mensaje -> ready')
 responder.send('ready'); //para darse de alta, decir q es disponible
+responder.on('message', function(msg) {
+    var args = Array.apply(null, arguments);
+    bul ? verb('r', args) : 0;
+    //hacer trabajo y al acabar notificar broker
+    jobs += 1;
+    args[2] = 'ok';
+    bul ? verb('s') : 0;
+    responder.send(args); 
+});
+
 setTimeout(function () {
     responder.close();
     process.exit;
 }, 3000);
-responder.on('message', function(msg) {
-    var args = Array.apply(null, arguments);
-    bul ? verb('r', args) : 0;
-    // if (bul) {
-    //     console.log('El worker -> ' + id + ' ha recibido trabajo del cliente -> ' + args[0])
-    //     printa(args);
-    // }
-    //hacer trabajo y al acabar notificar broker
-    args[2] = 'ok';
-    bul ? verb('s') : 0;
-    // if (bul) {
-    //     printa(args);
-    // }
-    responder.send(args); 
-});
 
 //------------------------helper functions------------------------
 function printa (a) {
@@ -49,7 +45,7 @@ function printa (a) {
 }
 function verb (a, args) {
     if (a === 's') {
-        console.log('El worker -> ' + id + ' envia la repuesta: ');
+        console.log('El worker -> ' + id + ' ya lleva ' + jobs + ' trabajos: ');
     }
     else if ('r') {
         console.log('El worker -> ' + id + ' ha recibido trabajo del cliente -> ' + args[0]);
