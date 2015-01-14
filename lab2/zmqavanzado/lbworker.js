@@ -27,7 +27,7 @@ setTimeout(function () {
 }, 3000);
 responder.on('message', function(msg) {
     var args = Array.apply(null, arguments);
-    bul ? verb('r', args[0]) : 0;
+    bul ? verb('r', args) : 0;
     // if (bul) {
     //     console.log('El worker -> ' + id + ' ha recibido trabajo del cliente -> ' + args[0])
     //     printa(args);
