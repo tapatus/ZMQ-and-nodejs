@@ -20,7 +20,7 @@ var zmq       = require('zmq'),
     }
 requester.identity = id;
 requester.connect('tcp://' + re);
-console.log('Conectado a tcp:// ' + re);
+console.log('El cliente ' + id + ' conectado a tcp:// ' + re);
 requester.on('message', function(msg) {
     console.log('Cliente -> ' + id + ' ha recibido respuesta ' + msg.toString());
     requester.close();

@@ -16,30 +16,42 @@ var zmq = require('zmq'),
     ta = args[5], //texto de atencion
     bul = args[6]; //boolean modo verbose
 
-    responder.identity = id;
-    responder.connect('tcp://' + be);
 
-    console.log('Ha enviado el primero mensaje -> ready')
-    responder.send('ready'); //para darse de alta, decir q es disponible
-    responder.on('message', function(msg) {
-        var args = Array.apply(null, arguments);
-        if (bul) {
-            console.log('El worker -> ' + id + ' ha recibido trabajo del cliente -> ' + args[0])
-            printa(args);
-        }
-        //hacer trabajo y al acabar notificar broker
-        args[2] = 'ok';
-        if (bul) {
-            console.log('El worker -> ' + id + ' envia la repuesta: ');
-            printa(args);
-        }
-        responder.send(args);
-        //responder.send(); // hecho
-    });
+responder.identity = id;
+responder.connect('tcp://' + be);
+console.log('El worker ' + id + ' ha enviado el primero mensaje -> ready')
+responder.send('ready'); //para darse de alta, decir q es disponible
+setTimeout(function () {
+    responder.close();
+    process.exit;
+}, 3000);
+responder.on('message', function(msg) {
+    var args = Array.apply(null, arguments);
+    bul ? verb('r', args[0]) : 0;
+    // if (bul) {
+    //     console.log('El worker -> ' + id + ' ha recibido trabajo del cliente -> ' + args[0])
+    //     printa(args);
+    // }
+    //hacer trabajo y al acabar notificar broker
+    args[2] = 'ok';
+    bul ? verb('s') : 0;
+    // if (bul) {
+    //     printa(args);
+    // }
+    responder.send(args); 
+});
 
 //------------------------helper functions------------------------
 function printa (a) {
     a.map(function (a, i) {
         console.log('\t Parte ' + i + ': ' + a.toString()); 
     });
+}
+function verb (a, args) {
+    if (a === 's') {
+        console.log('El worker -> ' + id + ' envia la repuesta: ');
+    }
+    else if ('r') {
+        console.log('El worker -> ' + id + ' ha recibido trabajo del cliente -> ' + args[0]);
+    }
 }

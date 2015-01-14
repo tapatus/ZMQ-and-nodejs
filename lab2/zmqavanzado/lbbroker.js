@@ -30,18 +30,14 @@ frontend.on('message', function() {
         enw = buscaworker(),
         id = args[0].toString(),
         te = args[2].toString();
-    if (bul) {
-        console.log('Request de cliente -> ' + id + ' con texto -> ' + te);
-    }
-    printa(args);
+    
+    bul ? verb('r', id, te, args) : 0;
     if (enw !== null) {
         args.unshift('');
         args.unshift(enw);
         workers[enw].disp = 'ocupado';
-        if (bul) {
-            console.log('Enviando peticion de cliente -> ' + args[2] + ' al worker -> ' + args[0] + ' usando el backend')
-        printa(args);
-        }
+
+        bul ? verb('s', args[2], args[0]) : 0;
         backend.send(args);
     }
     else {
@@ -53,22 +49,14 @@ backend.on('message', function() {
     var args = Array.apply(null, arguments);
     
     if (args[4] && args[4].toString() === 'ok') {
-        if (bul) {
-            console.log('Request de worker -> ' + args[0] + ' con texto -> ' + args[4]);
-            printa(args);
-        }
-        console.log('Enviando respuesta de worker -> ' + args[0] + ' al cliente -> ' + args[4] + ' usando el frontend')
+        bul ? verb('sr', args[0], args[4], args) : 0;
         workers[args[0]].disp = 'ready';
-        args = args.slice(2);
-        printa(args);
+        args = args.slice(2); printa(args);
         frontend.send(args);
     }
     
     else if (!estaya(args[0].toString())) {
-        if (bul) {
-            console.log('Request de worker -> ' + args[0] + ' con texto -> ' + args[2]);
-            printa(args);
-        }
+        bul ? verb('rw', args[0], args[2], args) : 0;
         workers[args[0].toString()] = {
                 disp : args[2].toString(),
                 jobs : 0,
@@ -101,4 +89,24 @@ function buscaworker () {
         }
     }
     return w;
+}
+
+function verb (a, b, c, args) {
+    switch (a) {
+    case 'r' :
+        console.log('Request de cliente -> ' + b + ' con texto -> ' + c);
+        printa(args);
+        break;
+    case 's' :
+        console.log('Enviando peticion de cliente -> ' + b + ' al worker -> ' + c + ' usando el backend')
+        break;
+    case 'sr' :
+        console.log('Request de worker -> ' + b + ' con texto -> ' + c);
+        printa(args);
+        console.log('Enviando respuesta de worker -> ' + b + ' al cliente -> ' + c + ' usando el frontend')
+        break;
+    case 'rw' :
+        console.log('Request de worker -> ' + b + ' con texto -> ' + c);
+        printa(args);
+    };
 }
