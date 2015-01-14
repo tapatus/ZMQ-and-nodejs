@@ -5,7 +5,7 @@ var args = process.argv;
 
 //si argumentos son menos de los necesitados
 if (args.length < 5) {
-    console.log('Puerto, segundos, mensaje');
+    console.log('Endpoint dealer, segundos, mensaje');
     process.exit();
 }
 var zmq = require('zmq'),
