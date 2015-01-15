@@ -35,7 +35,7 @@ responder.on('message', function(msg) {
 setTimeout(function () {
     responder.close();
     process.exit;
-}, 60000);
+}, 3000);
 
 //------------------------helper functions------------------------
 function printa (a) {

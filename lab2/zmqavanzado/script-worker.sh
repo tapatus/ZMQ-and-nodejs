@@ -9,7 +9,7 @@ done
 node lbbroker.js 5555 5556 true &
 
 number=0
-while [ $number -lt 10 ]; do
+while [ $number -lt 100 ]; do
     echo "Cliente $number"
     number=$((number + 1))
     node lbclient.js localhost:5555 client$number ClientMSG ready true &

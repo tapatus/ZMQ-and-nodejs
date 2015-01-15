@@ -11,37 +11,1837 @@ Cliente 6
 Cliente 7
 Cliente 8
 Cliente 9
+Cliente 10
+Cliente 11
+Cliente 12
+Cliente 13
+Cliente 14
+Cliente 15
+Cliente 16
+Cliente 17
+Cliente 18
+Cliente 19
+Cliente 20
+Cliente 21
+Cliente 22
+Cliente 23
+Cliente 24
+Cliente 25
+Cliente 26
+Cliente 27
+Cliente 28
+Cliente 29
+Cliente 30
+Cliente 31
+Cliente 32
+Cliente 33
+Cliente 34
+Cliente 35
+Cliente 36
+Cliente 37
+Cliente 38
+Cliente 39
+Cliente 40
+Cliente 41
+Cliente 42
+Cliente 43
+Cliente 44
+Cliente 45
+Cliente 46
+Cliente 47
+Cliente 48
+Cliente 49
+Cliente 50
+Cliente 51
+Cliente 52
+Cliente 53
+Cliente 54
+Cliente 55
+Cliente 56
+Cliente 57
+Cliente 58
+Cliente 59
+Cliente 60
+Cliente 61
+Cliente 62
+Cliente 63
+Cliente 64
+Cliente 65
+Cliente 66
+Cliente 67
+Cliente 68
+Cliente 69
+Cliente 70
+Cliente 71
+Cliente 72
+Cliente 73
+Cliente 74
+Cliente 75
+Cliente 76
+Cliente 77
+Cliente 78
+Cliente 79
+Cliente 80
+Cliente 81
+Cliente 82
+Cliente 83
+Cliente 84
+Cliente 85
+Cliente 86
+Cliente 87
+Cliente 88
+Cliente 89
+Cliente 90
+Cliente 91
+Cliente 92
+Cliente 93
+Cliente 94
+Cliente 95
+Cliente 96
+Cliente 97
+Cliente 98
+Cliente 99
+El cliente client18 conectado a tcp:// localhost:5555
+Cliente -> client18 envia el mensaje -> ClientMSG ready true
 El worker worker1 ha enviado el primero mensaje -> ready
 El cliente client8 conectado a tcp:// localhost:5555
 Cliente -> client8 envia el mensaje -> ClientMSG ready true
-El cliente client6 conectado a tcp:// localhost:5555
-Cliente -> client6 envia el mensaje -> ClientMSG ready true
-El cliente client9 conectado a tcp:// localhost:5555
-Cliente -> client9 envia el mensaje -> ClientMSG ready true
-El cliente client7 conectado a tcp:// localhost:5555
-Cliente -> client7 envia el mensaje -> ClientMSG ready true
-El worker worker2 ha enviado el primero mensaje -> ready
-El cliente client10 conectado a tcp:// localhost:5555
-Cliente -> client10 envia el mensaje -> ClientMSG ready true
-El cliente client2 conectado a tcp:// localhost:5555
-Cliente -> client2 envia el mensaje -> ClientMSG ready true
-Cliente -> client4 envia el mensaje -> ClientMSG ready true
-Frontend en puerto 5555
-Backend en puerto 5556
-El worker worker3 ha enviado el primero mensaje -> ready
-Request de worker -> worker3 con texto -> ready
-	 Parte 0: worker3
-	 Parte 1: 
-	 Parte 2: ready
+El cliente client22 conectado a tcp:// localhost:5555
+Cliente -> client22 envia el mensaje -> ClientMSG ready true
+El cliente client11 conectado a tcp:// localhost:5555
+Cliente -> client11 envia el mensaje -> ClientMSG ready true
+El cliente client25 conectado a tcp:// localhost:5555
+Cliente -> client25 envia el mensaje -> ClientMSG ready true
+El cliente client12 conectado a tcp:// localhost:5555
+Cliente -> client12 envia el mensaje -> ClientMSG ready true
+El cliente client1 conectado a tcp:// localhost:5555
+Cliente -> client1 envia el mensaje -> ClientMSG ready true
 El cliente client5 conectado a tcp:// localhost:5555
 Cliente -> client5 envia el mensaje -> ClientMSG ready true
+El cliente client24 conectado a tcp:// localhost:5555
+Cliente -> client24 envia el mensaje -> ClientMSG ready true
+El cliente client13 conectado a tcp:// localhost:5555
+Cliente -> client13 envia el mensaje -> ClientMSG ready true
+El cliente client4 conectado a tcp:// localhost:5555
+El worker worker2 ha enviado el primero mensaje -> ready
+Cliente -> client4 envia el mensaje -> ClientMSG ready true
+El cliente client31 conectado a tcp:// localhost:5555
+Cliente -> client31 envia el mensaje -> ClientMSG ready true
+Frontend en puerto 5555
+Backend en puerto 5556
+El cliente client43 conectado a tcp:// localhost:5555
+Cliente -> client43 envia el mensaje -> ClientMSG ready true
+El cliente client9 conectado a tcp:// localhost:5555
+El cliente client32 conectado a tcp:// localhost:5555
+Cliente -> client9 envia el mensaje -> ClientMSG ready true
+Cliente -> client32 envia el mensaje -> ClientMSG ready true
+El cliente client48 conectado a tcp:// localhost:5555
+Cliente -> client48 envia el mensaje -> ClientMSG ready true
+El cliente client37 conectado a tcp:// localhost:5555
+Cliente -> client37 envia el mensaje -> ClientMSG ready true
+El worker worker3 ha enviado el primero mensaje -> ready
+El cliente client6 conectado a tcp:// localhost:5555
+Cliente -> client6 envia el mensaje -> ClientMSG ready true
+El cliente client30 conectado a tcp:// localhost:5555
+Cliente -> client30 envia el mensaje -> ClientMSG ready true
+El cliente client50 conectado a tcp:// localhost:5555
+Cliente -> client50 envia el mensaje -> ClientMSG ready true
+El cliente client39 conectado a tcp:// localhost:5555
+Cliente -> client39 envia el mensaje -> ClientMSG ready true
+El cliente client40 conectado a tcp:// localhost:5555
+Cliente -> client40 envia el mensaje -> ClientMSG ready true
+Request de cliente -> client18 con texto -> ClientMSG ready true
+	 Parte 0: client18
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client6 con texto -> ClientMSG ready true
+	 Parte 0: client6
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client24 con texto -> ClientMSG ready true
+	 Parte 0: client24
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client22 con texto -> ClientMSG ready true
+	 Parte 0: client22
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client1 con texto -> ClientMSG ready true
+	 Parte 0: client1
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client9 con texto -> ClientMSG ready true
+	 Parte 0: client9
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client32 con texto -> ClientMSG ready true
+	 Parte 0: client32
+	 Parte 1: 
+El cliente client47 conectado a tcp:// localhost:5555
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client48 con texto -> ClientMSG ready true
+Cliente -> client47 envia el mensaje -> ClientMSG ready true
+	 Parte 0: client48
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client37 con texto -> ClientMSG ready true
+	 Parte 0: client37
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client31 con texto -> ClientMSG ready true
+	 Parte 0: client31
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client39 con texto -> ClientMSG ready true
+	 Parte 0: client39
+	 Parte 1: 
+El cliente client2 conectado a tcp:// localhost:5555
+Cliente -> client2 envia el mensaje -> ClientMSG ready true
+El cliente client62 conectado a tcp:// localhost:5555
+Cliente -> client62 envia el mensaje -> ClientMSG ready true
+El cliente client56 conectado a tcp:// localhost:5555
+Cliente -> client56 envia el mensaje -> ClientMSG ready true
+El cliente client53 conectado a tcp:// localhost:5555
+Cliente -> client53 envia el mensaje -> ClientMSG ready true
+El cliente client66 conectado a tcp:// localhost:5555
+Cliente -> client66 envia el mensaje -> ClientMSG ready true
+El cliente client44 conectado a tcp:// localhost:5555
+Cliente -> client44 envia el mensaje -> ClientMSG ready true
+El cliente client55 conectado a tcp:// localhost:5555
+Cliente -> client55 envia el mensaje -> ClientMSG ready true
+El cliente client59 conectado a tcp:// localhost:5555
+Cliente -> client59 envia el mensaje -> ClientMSG ready true
+El cliente client29 conectado a tcp:// localhost:5555
+Cliente -> client29 envia el mensaje -> ClientMSG ready true
+El cliente client63 conectado a tcp:// localhost:5555
+Cliente -> client63 envia el mensaje -> ClientMSG ready true
+El cliente client61 conectado a tcp:// localhost:5555
+Cliente -> client61 envia el mensaje -> ClientMSG ready true
+El cliente client81 conectado a tcp:// localhost:5555
+Cliente -> client81 envia el mensaje -> ClientMSG ready true
+El cliente client15 conectado a tcp:// localhost:5555
+Cliente -> client15 envia el mensaje -> ClientMSG ready true
+El cliente client69 conectado a tcp:// localhost:5555
+Cliente -> client69 envia el mensaje -> ClientMSG ready true
+El cliente client70 conectado a tcp:// localhost:5555
+Cliente -> client70 envia el mensaje -> ClientMSG ready true
+El cliente client79 conectado a tcp:// localhost:5555
+Cliente -> client79 envia el mensaje -> ClientMSG ready true
+El cliente client86 conectado a tcp:// localhost:5555
+Cliente -> client86 envia el mensaje -> ClientMSG ready true
+El cliente client87 conectado a tcp:// localhost:5555
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client11 con texto -> ClientMSG ready true
+	 Parte 0: client11
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client40 con texto -> ClientMSG ready true
+	 Parte 0: client40
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
 Request de cliente -> client5 con texto -> ClientMSG ready true
 	 Parte 0: client5
 	 Parte 1: 
 	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client5 al worker -> worker3 usando el backend
+no hay quien le atienda ahora
+Request de cliente -> client43 con texto -> ClientMSG ready true
+	 Parte 0: client43
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client12 con texto -> ClientMSG ready true
+	 Parte 0: client12
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client13 con texto -> ClientMSG ready true
+	 Parte 0: client13
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client8 con texto -> ClientMSG ready true
+	 Parte 0: client8
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client30 con texto -> ClientMSG ready true
+	 Parte 0: client30
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client47 con texto -> ClientMSG ready true
+	 Parte 0: client47
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client25 con texto -> ClientMSG ready true
+	 Parte 0: client25
+	 Parte 1: 
+El cliente client20 conectado a tcp:// localhost:5555
+no hay quien le atienda ahora
+Request de cliente -> client56 con texto -> ClientMSG ready true
+	 Parte 0: client56
+Cliente -> client20 envia el mensaje -> ClientMSG ready true
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client50 con texto -> ClientMSG ready true
+	 Parte 0: client50
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client15 con texto -> ClientMSG ready true
+	 Parte 0: client15
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+El cliente client10 conectado a tcp:// localhost:5555
+Cliente -> client10 envia el mensaje -> ClientMSG ready true
+El cliente client45 conectado a tcp:// localhost:5555
+Cliente -> client45 envia el mensaje -> ClientMSG ready true
+El cliente client26 conectado a tcp:// localhost:5555
+Cliente -> client26 envia el mensaje -> ClientMSG ready true
+El cliente client19 conectado a tcp:// localhost:5555
+Cliente -> client19 envia el mensaje -> ClientMSG ready true
+El cliente client75 conectado a tcp:// localhost:5555
+El cliente client7 conectado a tcp:// localhost:5555
+Cliente -> client75 envia el mensaje -> ClientMSG ready true
+Cliente -> client7 envia el mensaje -> ClientMSG ready true
+El cliente client23 conectado a tcp:// localhost:5555
+Cliente -> client23 envia el mensaje -> ClientMSG ready true
+El cliente client35 conectado a tcp:// localhost:5555
+El cliente client21 conectado a tcp:// localhost:5555
+Cliente -> client35 envia el mensaje -> ClientMSG ready true
+Cliente -> client21 envia el mensaje -> ClientMSG ready true
+El cliente client72 conectado a tcp:// localhost:5555
+Cliente -> client72 envia el mensaje -> ClientMSG ready true
+El cliente client28 conectado a tcp:// localhost:5555
+Cliente -> client28 envia el mensaje -> ClientMSG ready true
+El cliente client73 conectado a tcp:// localhost:5555
+Cliente -> client73 envia el mensaje -> ClientMSG ready true
+El cliente client90 conectado a tcp:// localhost:5555
+Cliente -> client90 envia el mensaje -> ClientMSG ready true
+El cliente client33 conectado a tcp:// localhost:5555
+Cliente -> client33 envia el mensaje -> ClientMSG ready true
+El cliente client36 conectado a tcp:// localhost:5555
+Cliente -> client36 envia el mensaje -> ClientMSG ready true
+El cliente client84 conectado a tcp:// localhost:5555
+Cliente -> client84 envia el mensaje -> ClientMSG ready true
+El cliente client94 conectado a tcp:// localhost:5555
+Cliente -> client94 envia el mensaje -> ClientMSG ready true
+El cliente client100 conectado a tcp:// localhost:5555
+Cliente -> client100 envia el mensaje -> ClientMSG ready true
+El cliente client98 conectado a tcp:// localhost:5555
+El cliente client17 conectado a tcp:// localhost:5555
+Cliente -> client17 envia el mensaje -> ClientMSG ready true
+El cliente client99 conectado a tcp:// localhost:5555
+Cliente -> client99 envia el mensaje -> ClientMSG ready true
+Cliente -> client98 envia el mensaje -> ClientMSG ready true
+El cliente client41 conectado a tcp:// localhost:5555
+Cliente -> client41 envia el mensaje -> ClientMSG ready true
+Cliente -> client87 envia el mensaje -> ClientMSG ready true
+El cliente client42 conectado a tcp:// localhost:5555
+Cliente -> client42 envia el mensaje -> ClientMSG ready true
+Request de cliente -> client44 con texto -> ClientMSG ready true
+	 Parte 0: client44
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client29 con texto -> ClientMSG ready true
+	 Parte 0: client29
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client55 con texto -> ClientMSG ready true
+	 Parte 0: client55
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client59 con texto -> ClientMSG ready true
+	 Parte 0: client59
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client7 con texto -> ClientMSG ready true
+	 Parte 0: client7
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client10 con texto -> ClientMSG ready true
+	 Parte 0: client10
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client62 con texto -> ClientMSG ready true
+	 Parte 0: client62
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client20 con texto -> ClientMSG ready true
+	 Parte 0: client20
+	 Parte 1: 
+El cliente client14 conectado a tcp:// localhost:5555
+Cliente -> client14 envia el mensaje -> ClientMSG ready true
+El cliente client95 conectado a tcp:// localhost:5555
+Cliente -> client95 envia el mensaje -> ClientMSG ready true
+El cliente client96 conectado a tcp:// localhost:5555
+Cliente -> client96 envia el mensaje -> ClientMSG ready true
+El cliente client27 conectado a tcp:// localhost:5555
+Cliente -> client27 envia el mensaje -> ClientMSG ready true
+El cliente client64 conectado a tcp:// localhost:5555
+Cliente -> client64 envia el mensaje -> ClientMSG ready true
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client66 con texto -> ClientMSG ready true
+	 Parte 0: client66
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client61 con texto -> ClientMSG ready true
+	 Parte 0: client61
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client33 con texto -> ClientMSG ready true
+	 Parte 0: client33
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client4 con texto -> ClientMSG ready true
+	 Parte 0: client4
+	 Parte 1: 
+El cliente client38 conectado a tcp:// localhost:5555
+Cliente -> client38 envia el mensaje -> ClientMSG ready true
+El cliente client93 conectado a tcp:// localhost:5555
+Cliente -> client93 envia el mensaje -> ClientMSG ready true
+	 Parte 2: ClientMSG ready true
+El cliente client16 conectado a tcp:// localhost:5555
+Request de cliente -> client35 con texto -> ClientMSG ready true
+	 Parte 0: client35
+Cliente -> client16 envia el mensaje -> ClientMSG ready true
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client36 con texto -> ClientMSG ready true
+	 Parte 0: client36
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client19 con texto -> ClientMSG ready true
+El cliente client51 conectado a tcp:// localhost:5555
+Cliente -> client51 envia el mensaje -> ClientMSG ready true
+El cliente client34 conectado a tcp:// localhost:5555
+Cliente -> client34 envia el mensaje -> ClientMSG ready true
+	 Parte 0: client19
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client38 con texto -> ClientMSG ready true
+	 Parte 0: client38
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client53 con texto -> ClientMSG ready true
+	 Parte 0: client53
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client23 con texto -> ClientMSG ready true
+	 Parte 0: client23
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client28 con texto -> ClientMSG ready true
+	 Parte 0: client28
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client72 con texto -> ClientMSG ready true
+	 Parte 0: client72
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client27 con texto -> ClientMSG ready true
+	 Parte 0: client27
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client14 con texto -> ClientMSG ready true
+	 Parte 0: client14
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client26 con texto -> ClientMSG ready true
+	 Parte 0: client26
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+El cliente client74 conectado a tcp:// localhost:5555
+Cliente -> client74 envia el mensaje -> ClientMSG ready true
+Request de cliente -> client34 con texto -> ClientMSG ready true
+	 Parte 0: client34
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client63 con texto -> ClientMSG ready true
+	 Parte 0: client63
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client16 con texto -> ClientMSG ready true
+	 Parte 0: client16
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client17 con texto -> ClientMSG ready true
+	 Parte 0: client17
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client21 con texto -> ClientMSG ready true
+Cliente -> client65 envia el mensaje -> ClientMSG ready true
+	 Parte 0: client21
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client69 con texto -> ClientMSG ready true
+	 Parte 0: client69
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client73 con texto -> ClientMSG ready true
+	 Parte 0: client73
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client70 con texto -> ClientMSG ready true
+	 Parte 0: client70
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client45 con texto -> ClientMSG ready true
+	 Parte 0: client45
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client87 con texto -> ClientMSG ready true
+	 Parte 0: client87
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client81 con texto -> ClientMSG ready true
+	 Parte 0: client81
+El cliente client3 conectado a tcp:// localhost:5555
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client51 con texto -> ClientMSG ready true
+Cliente -> client3 envia el mensaje -> ClientMSG ready true
+	 Parte 0: client51
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client41 con texto -> ClientMSG ready true
+	 Parte 0: client41
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client79 con texto -> ClientMSG ready true
+	 Parte 0: client79
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client42 con texto -> ClientMSG ready true
+	 Parte 0: client42
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client75 con texto -> ClientMSG ready true
+	 Parte 0: client75
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client3 con texto -> ClientMSG ready true
+	 Parte 0: client3
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client84 con texto -> ClientMSG ready true
+	 Parte 0: client84
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client86 con texto -> ClientMSG ready true
+	 Parte 0: client86
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client90 con texto -> ClientMSG ready true
+	 Parte 0: client90
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client95 con texto -> ClientMSG ready true
+	 Parte 0: client95
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client93 con texto -> ClientMSG ready true
+	 Parte 0: client93
+	 Parte 1: 
+El cliente client46 conectado a tcp:// localhost:5555
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client96 con texto -> ClientMSG ready true
+	 Parte 0: client96
+Cliente -> client46 envia el mensaje -> ClientMSG ready true
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client100 con texto -> ClientMSG ready true
+	 Parte 0: client100
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client98 con texto -> ClientMSG ready true
+	 Parte 0: client98
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client64 con texto -> ClientMSG ready true
+	 Parte 0: client64
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client99 con texto -> ClientMSG ready true
+	 Parte 0: client99
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client94 con texto -> ClientMSG ready true
+	 Parte 0: client94
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client74 con texto -> ClientMSG ready true
+	 Parte 0: client74
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client2 con texto -> ClientMSG ready true
+	 Parte 0: client2
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de worker -> worker2 con texto -> ready
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: ready
+El cliente client54 conectado a tcp:// localhost:5555
+Request de worker -> worker1 con texto -> ready
+Cliente -> client54 envia el mensaje -> ClientMSG ready true
+	 Parte 0: worker1
+El cliente client58 conectado a tcp:// localhost:5555
+Cliente -> client58 envia el mensaje -> ClientMSG ready true
+	 Parte 1: 
+	 Parte 2: ready
+Request de worker -> worker3 con texto -> ready
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: ready
+Request de cliente -> client54 con texto -> ClientMSG ready true
+	 Parte 0: client54
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+Enviando peticion de cliente -> client54 al worker -> worker3 usando el backend
+El worker -> worker3 ha recibido trabajo del cliente -> client54
+El worker -> worker3 ya lleva 1 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client54
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client54 usando el frontend
+is colos
+	 Parte 0: client54
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker3 ha recibido trabajo del cliente -> client2
+El worker -> worker3 ya lleva 2 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client2
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client2 usando el frontend
+is colos
+El worker -> worker3 ha recibido trabajo del cliente -> client74
+El worker -> worker3 ya lleva 3 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client74
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client74 usando el frontend
+is colos
+	 Parte 0: client74
+	 Parte 1: 
+	 Parte 2: ok
+Request de cliente -> client58 con texto -> ClientMSG ready true
+	 Parte 0: client58
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+Enviando peticion de cliente -> client58 al worker -> worker1 usando el backend
+El worker -> worker3 ha recibido trabajo del cliente -> client94
+El worker -> worker3 ya lleva 4 trabajos: 
+El cliente client52 conectado a tcp:// localhost:5555
+Cliente -> client52 envia el mensaje -> ClientMSG ready true
+El worker -> worker1 ha recibido trabajo del cliente -> client58
+El worker -> worker1 ya lleva 1 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client94
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client94 usando el frontend
+is colos
+	 Parte 0: client94
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client58
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client58 usando el frontend
+is colos
+Cliente -> client49 envia el mensaje -> ClientMSG ready true
+El worker -> worker3 ha recibido trabajo del cliente -> client99
+El worker -> worker3 ya lleva 5 trabajos: 
+El cliente client57 conectado a tcp:// localhost:5555
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client99
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client99 usando el frontend
+is colos
+	 Parte 0: client99
+	 Parte 1: 
+	 Parte 2: ok
+Request de cliente -> client46 con texto -> ClientMSG ready true
+	 Parte 0: client46
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+Enviando peticion de cliente -> client46 al worker -> worker2 usando el backend
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client64
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client64 usando el frontend
+is colos
+	 Parte 0: client64
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker3 ha recibido trabajo del cliente -> client98
+El worker -> worker3 ya lleva 6 trabajos: 
+El worker -> worker1 ha recibido trabajo del cliente -> client100
+El worker -> worker1 ya lleva 3 trabajos: 
+El cliente client71 conectado a tcp:// localhost:5555
+El worker -> worker2 ha recibido trabajo del cliente -> client46
+El worker -> worker2 ya lleva 1 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client98
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client98 usando el frontend
+is colos
+Request de worker -> worker2 con texto -> ok
+Cliente -> client71 envia el mensaje -> ClientMSG ready true
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client46
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client46 usando el frontend
+is colos
+	 Parte 0: client46
+	 Parte 1: 
+	 Parte 2: ok
+Request de cliente -> client65 con texto -> ClientMSG ready true
+	 Parte 0: client65
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+El cliente client60 conectado a tcp:// localhost:5555
+El cliente client80 conectado a tcp:// localhost:5555
+Cliente -> client60 envia el mensaje -> ClientMSG ready true
+Cliente -> client80 envia el mensaje -> ClientMSG ready true
+Cliente -> client99 ha recibido respuesta ok
+Cliente -> client68 envia el mensaje -> ClientMSG ready true
+Request de cliente -> client57 con texto -> ClientMSG ready true
+	 Parte 0: client57
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client52 con texto -> ClientMSG ready true
+	 Parte 0: client52
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client71 con texto -> ClientMSG ready true
+	 Parte 0: client71
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client49 con texto -> ClientMSG ready true
+	 Parte 0: client49
+El cliente client76 conectado a tcp:// localhost:5555
+Cliente -> client76 envia el mensaje -> ClientMSG ready true
+Cliente -> client46 ha recibido respuesta ok
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client68 con texto -> ClientMSG ready true
+	 Parte 0: client68
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client60 con texto -> ClientMSG ready true
+	 Parte 0: client60
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client80 con texto -> ClientMSG ready true
+	 Parte 0: client80
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+El worker -> worker3 ha recibido trabajo del cliente -> client96
+El worker -> worker3 ya lleva 7 trabajos: 
+El worker -> worker2 ha recibido trabajo del cliente -> client93
+El worker -> worker2 ya lleva 2 trabajos: 
+El cliente client89 conectado a tcp:// localhost:5555
+Cliente -> client89 envia el mensaje -> ClientMSG ready true
+El cliente client92 conectado a tcp:// localhost:5555
+Cliente -> client92 envia el mensaje -> ClientMSG ready true
+	 Parte 2: client100
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client100 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client96
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client96 usando el frontend
+is colos
+	 Parte 0: client96
+	 Parte 1: 
+	 Parte 2: ok
+Request de cliente -> client89 con texto -> ClientMSG ready true
+	 Parte 0: client89
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client92 con texto -> ClientMSG ready true
+	 Parte 0: client92
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client76 con texto -> ClientMSG ready true
+	 Parte 0: client76
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client93
+	 Parte 3: 
+	 Parte 4: ok
+El worker -> worker1 ha recibido trabajo del cliente -> client80
+El worker -> worker1 ya lleva 4 trabajos: 
+Enviando respuesta de worker -> worker2 al cliente -> client93 usando el frontend
+is colos
+Cliente -> client96 ha recibido respuesta ok
+El worker -> worker3 ha recibido trabajo del cliente -> client60
+El worker -> worker3 ya lleva 8 trabajos: 
+El worker -> worker2 ha recibido trabajo del cliente -> client76
+El worker -> worker2 ya lleva 3 trabajos: 
+El cliente client88 conectado a tcp:// localhost:5555
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client80
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client80 usando el frontend
+is colos
+	 Parte 0: client80
+	 Parte 1: 
+	 Parte 2: ok
+El cliente client82 conectado a tcp:// localhost:5555
+Cliente -> client82 envia el mensaje -> ClientMSG ready true
+El cliente client85 conectado a tcp:// localhost:5555
+Cliente -> client85 envia el mensaje -> ClientMSG ready true
+Cliente -> client80 ha recibido respuesta ok
+El cliente client77 conectado a tcp:// localhost:5555
+Cliente -> client77 envia el mensaje -> ClientMSG ready true
+El cliente client67 conectado a tcp:// localhost:5555
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client60
+	 Parte 3: 
+	 Parte 4: ok
+Cliente -> client67 envia el mensaje -> ClientMSG ready true
+Enviando respuesta de worker -> worker3 al cliente -> client60 usando el frontend
+is colos
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client76
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client76 usando el frontend
+is colos
+	 Parte 0: client76
+	 Parte 1: 
+	 Parte 2: ok
+El cliente client83 conectado a tcp:// localhost:5555
+El cliente client78 conectado a tcp:// localhost:5555
+Cliente -> client76 ha recibido respuesta ok
+Cliente -> client88 envia el mensaje -> ClientMSG ready true
+Cliente -> client78 envia el mensaje -> ClientMSG ready true
+Request de cliente -> client82 con texto -> ClientMSG ready true
+	 Parte 0: client82
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client77 con texto -> ClientMSG ready true
+	 Parte 0: client77
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client67 con texto -> ClientMSG ready true
+	 Parte 0: client67
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client85 con texto -> ClientMSG ready true
+	 Parte 0: client85
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client88 con texto -> ClientMSG ready true
+	 Parte 0: client88
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+El worker -> worker1 ha recibido trabajo del cliente -> client92
+El worker -> worker1 ya lleva 5 trabajos: 
+El worker -> worker3 ha recibido trabajo del cliente -> client89
+El worker -> worker3 ya lleva 9 trabajos: 
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client92
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client92 usando el frontend
+is colos
+El worker -> worker2 ya lleva 4 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client89
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client89 usando el frontend
+is colos
+	 Parte 0: client89
+	 Parte 1: 
+	 Parte 2: ok
+Request de cliente -> client78 con texto -> ClientMSG ready true
+	 Parte 0: client78
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de cliente -> client83 con texto -> ClientMSG ready true
+	 Parte 0: client83
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+El worker -> worker1 ha recibido trabajo del cliente -> client88
+El worker -> worker1 ya lleva 6 trabajos: 
+El worker -> worker3 ha recibido trabajo del cliente -> client85
+El worker -> worker3 ya lleva 10 trabajos: 
+El cliente client91 conectado a tcp:// localhost:5555
+Cliente -> client91 envia el mensaje -> ClientMSG ready true
+Cliente -> client89 ha recibido respuesta ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client68
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client68 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client88
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client88 usando el frontend
+is colos
+	 Parte 0: client88
+	 Parte 1: 
+	 Parte 2: ok
+Request de cliente -> client91 con texto -> ClientMSG ready true
+	 Parte 0: client91
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client85
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client85 usando el frontend
+is colos
+El worker -> worker1 ha recibido trabajo del cliente -> client78
+El worker -> worker2 ha recibido trabajo del cliente -> client83
+El worker -> worker1 ya lleva 7 trabajos: 
+El worker -> worker2 ya lleva 5 trabajos: 
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client78
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client78 usando el frontend
+is colos
+	 Parte 0: client78
+	 Parte 1: 
+	 Parte 2: ok
+El cliente client97 conectado a tcp:// localhost:5555
+Cliente -> client97 envia el mensaje -> ClientMSG ready true
+Cliente -> client78 ha recibido respuesta ok
+Request de worker -> worker2 con texto -> ok
+El worker -> worker3 ha recibido trabajo del cliente -> client91
+El worker -> worker1 ya lleva 8 trabajos: 
+El worker -> worker3 ya lleva 11 trabajos: 
+	 Parte 1: 
+	 Parte 2: client83
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client83 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client67
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client67 usando el frontend
+is colos
+	 Parte 0: client67
+	 Parte 1: 
+	 Parte 2: ok
+Request de cliente -> client97 con texto -> ClientMSG ready true
+	 Parte 0: client97
+	 Parte 1: 
+	 Parte 2: ClientMSG ready true
+no hay quien le atienda ahora
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+El worker -> worker2 ha recibido trabajo del cliente -> client77
+	 Parte 2: client91
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client91 usando el frontend
+is colos
+Request de worker -> worker2 con texto -> ok
+El worker -> worker1 ha recibido trabajo del cliente -> client82
+	 Parte 1: 
+El worker -> worker1 ya lleva 9 trabajos: 
+	 Parte 2: client77
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client77 usando el frontend
+is colos
+	 Parte 0: client77
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client67 ha recibido respuesta ok
+El worker -> worker3 ya lleva 12 trabajos: 
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client82
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client82 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+Cliente -> client77 ha recibido respuesta ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client97
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client97 usando el frontend
+is colos
+	 Parte 0: client97
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client82
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client91
+El worker -> worker1 ha recibido trabajo del cliente -> client71
+	 Parte 1: 
+El worker -> worker3 ya lleva 13 trabajos: 
+	 Parte 2: ok
+	 Parte 0: client83
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker2 ha recibido trabajo del cliente -> client49
+El worker -> worker2 ya lleva 7 trabajos: 
+Cliente -> client97 ha recibido respuesta ok
+Cliente -> client83 ha recibido respuesta ok
+Cliente -> client82 ha recibido respuesta ok
+Cliente -> client91 ha recibido respuesta ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client71
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client71 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client52
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client52 usando el frontend
+is colos
+	 Parte 0: client52
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client49
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client49 usando el frontend
+is colos
+	 Parte 0: client49
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client71
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client85
+	 Parte 1: 
+El worker -> worker2 ha recibido trabajo del cliente -> client95
+El worker -> worker2 ya lleva 8 trabajos: 
+El worker -> worker1 ha recibido trabajo del cliente -> client57
+El worker -> worker1 ya lleva 11 trabajos: 
+El worker -> worker3 ha recibido trabajo del cliente -> client65
+El worker -> worker3 ya lleva 14 trabajos: 
+Cliente -> client49 ha recibido respuesta ok
+Cliente -> client71 ha recibido respuesta ok
+	 Parte 2: ok
+Cliente -> client52 ha recibido respuesta ok
+Cliente -> client85 ha recibido respuesta ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client57
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client57 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client65
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client65 usando el frontend
+is colos
+	 Parte 0: client65
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker1 ha recibido trabajo del cliente -> client90
+El worker -> worker1 ya lleva 12 trabajos: 
+El worker -> worker3 ha recibido trabajo del cliente -> client86
+El worker -> worker3 ya lleva 15 trabajos: 
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client95
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client95 usando el frontend
+is colos
+	 Parte 0: client95
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client57
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client68
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client92
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client57 ha recibido respuesta ok
+Cliente -> client68 ha recibido respuesta ok
+El worker -> worker2 ha recibido trabajo del cliente -> client84
+El worker -> worker2 ya lleva 9 trabajos: 
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client90
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client90 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client86
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client86 usando el frontend
+is colos
+	 Parte 0: client86
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker1 ha recibido trabajo del cliente -> client3
+El worker -> worker3 ya lleva 16 trabajos: 
+El worker -> worker1 ya lleva 13 trabajos: 
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client84
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client84 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client3
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client3 usando el frontend
+is colos
+Cliente -> client86 ha recibido respuesta ok
+	 Parte 0: client3
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker2 ha recibido trabajo del cliente -> client42
+El worker -> worker1 ha recibido trabajo del cliente -> client79
+El worker -> worker2 ya lleva 10 trabajos: 
+El worker -> worker1 ya lleva 14 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client75
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client75 usando el frontend
+is colos
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client42
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client42 usando el frontend
+is colos
+	 Parte 0: client42
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client3 ha recibido respuesta ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client79
+El worker -> worker2 ya lleva 11 trabajos: 
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client79 usando el frontend
+is colos
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client51
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client51 usando el frontend
+is colos
+	 Parte 0: client51
+Cliente -> client42 ha recibido respuesta ok
+	 Parte 2: ok
+	 Parte 0: client79
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client75
+El worker -> worker2 ha recibido trabajo del cliente -> client87
+El worker -> worker2 ya lleva 12 trabajos: 
+Cliente -> client58 ha recibido respuesta ok
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client81
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client81 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client41
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client41 usando el frontend
+is colos
+	 Parte 0: client41
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client87
+	 Parte 3: 
+El worker -> worker1 ha recibido trabajo del cliente -> client45
+	 Parte 4: ok
+El worker -> worker1 ya lleva 16 trabajos: 
+Enviando respuesta de worker -> worker2 al cliente -> client87 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client45
+	 Parte 3: 
+El worker -> worker2 ya lleva 13 trabajos: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client45 usando el frontend
+is colos
+	 Parte 0: client45
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+Cliente -> client2 ha recibido respuesta ok
+	 Parte 2: client73
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client73 usando el frontend
+is colos
+El worker -> worker2 ha recibido trabajo del cliente -> client21
+El worker -> worker2 ya lleva 14 trabajos: 
+Cliente -> client45 ha recibido respuesta ok
+El worker -> worker1 ha recibido trabajo del cliente -> client69
+El worker -> worker1 ya lleva 17 trabajos: 
+El worker -> worker3 ha recibido trabajo del cliente -> client70
+El worker -> worker3 ya lleva 18 trabajos: 
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client21
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client21 usando el frontend
+is colos
+	 Parte 0: client21
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client69
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client69 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client70
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client70 usando el frontend
+is colos
+	 Parte 0: client70
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker2 ha recibido trabajo del cliente -> client17
+Cliente -> client21 ha recibido respuesta ok
+El worker -> worker3 ha recibido trabajo del cliente -> client63
+El worker -> worker3 ya lleva 19 trabajos: 
+Cliente -> client70 ha recibido respuesta ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client17
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client17 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client16
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client16 usando el frontend
+is colos
+	 Parte 0: client16
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client16 ha recibido respuesta ok
+El worker -> worker1 ha recibido trabajo del cliente -> client26
+El worker -> worker1 ya lleva 19 trabajos: 
+El worker -> worker2 ha recibido trabajo del cliente -> client34
+El worker -> worker2 ya lleva 16 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client63
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client63 usando el frontend
+is colos
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client34
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client34 usando el frontend
+is colos
+	 Parte 0: client34
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+El worker -> worker3 ha recibido trabajo del cliente -> client14
+	 Parte 3: 
+El worker -> worker3 ya lleva 20 trabajos: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client26 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client14
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client14 usando el frontend
+is colos
+	 Parte 0: client14
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client26
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker3 ha recibido trabajo del cliente -> client28
+El worker -> worker3 ya lleva 21 trabajos: 
+	 Parte 0: client63
+El worker -> worker2 ha recibido trabajo del cliente -> client27
+El worker -> worker2 ya lleva 17 trabajos: 
+Cliente -> client14 ha recibido respuesta ok
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client26 ha recibido respuesta ok
+El worker -> worker1 ha recibido trabajo del cliente -> client72
+El worker -> worker1 ya lleva 20 trabajos: 
+Cliente -> client63 ha recibido respuesta ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client27
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client27 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client72
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client72 usando el frontend
+is colos
+	 Parte 0: client72
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker2 ha recibido trabajo del cliente -> client23
+El worker -> worker2 ya lleva 18 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client28
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client28 usando el frontend
+is colos
+El worker -> worker1 ha recibido trabajo del cliente -> client53
+El worker -> worker1 ya lleva 21 trabajos: 
+Request de worker -> worker2 con texto -> ok
+Cliente -> client72 ha recibido respuesta ok
+	 Parte 1: 
+	 Parte 2: client23
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client23 usando el frontend
+is colos
+	 Parte 0: client23
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker3 ha recibido trabajo del cliente -> client38
+El worker -> worker3 ya lleva 22 trabajos: 
+El worker -> worker2 ha recibido trabajo del cliente -> client19
+El worker -> worker2 ya lleva 19 trabajos: 
+Cliente -> client23 ha recibido respuesta ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client53
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client53 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client38
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client38 usando el frontend
+is colos
+	 Parte 0: client38
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker3 ha recibido trabajo del cliente -> client35
+El worker -> worker3 ya lleva 23 trabajos: 
+El worker -> worker1 ha recibido trabajo del cliente -> client36
+El worker -> worker1 ya lleva 22 trabajos: 
+Cliente -> client38 ha recibido respuesta ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client19
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client19 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client36
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client36 usando el frontend
+is colos
+	 Parte 0: client36
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client35
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client35 usando el frontend
+is colos
+El worker -> worker2 ha recibido trabajo del cliente -> client4
+El worker -> worker1 ha recibido trabajo del cliente -> client33
+El worker -> worker2 ya lleva 20 trabajos: 
+El worker -> worker1 ya lleva 23 trabajos: 
+	 Parte 0: client35
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker3 ha recibido trabajo del cliente -> client61
+El worker -> worker3 ya lleva 24 trabajos: 
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client4
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client4 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client33
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client33 usando el frontend
+is colos
+	 Parte 0: client33
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker2 ha recibido trabajo del cliente -> client66
+El worker -> worker2 ya lleva 21 trabajos: 
+Cliente -> client35 ha recibido respuesta ok
+Cliente -> client33 ha recibido respuesta ok
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client61
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client61 usando el frontend
+is colos
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client66
+	 Parte 3: 
+	 Parte 4: ok
+El worker -> worker1 ya lleva 24 trabajos: 
+Enviando respuesta de worker -> worker2 al cliente -> client66 usando el frontend
+is colos
+	 Parte 0: client66
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client20
+El worker -> worker2 ha recibido trabajo del cliente -> client10
+	 Parte 3: 
+	 Parte 4: ok
+El worker -> worker2 ya lleva 22 trabajos: 
+Enviando respuesta de worker -> worker1 al cliente -> client20 usando el frontend
+is colos
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client10
+El worker -> worker1 ha recibido trabajo del cliente -> client7
+	 Parte 3: 
+El worker -> worker1 ya lleva 25 trabajos: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client10 usando el frontend
+Cliente -> client66 ha recibido respuesta ok
+	 Parte 0: client10
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker3 ha recibido trabajo del cliente -> client62
+El worker -> worker3 ya lleva 25 trabajos: 
+	 Parte 0: client20
+	 Parte 1: 
+El worker -> worker2 ha recibido trabajo del cliente -> client59
+El worker -> worker2 ya lleva 23 trabajos: 
+Cliente -> client10 ha recibido respuesta ok
+	 Parte 2: ok
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client7
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client7 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client62
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client62 usando el frontend
+is colos
+	 Parte 0: client62
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client20 ha recibido respuesta ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client59
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client59 usando el frontend
+is colos
+El worker -> worker3 ha recibido trabajo del cliente -> client29
+El worker -> worker3 ya lleva 26 trabajos: 
+El worker -> worker2 ha recibido trabajo del cliente -> client44
+El worker -> worker2 ya lleva 24 trabajos: 
+El worker -> worker1 ha recibido trabajo del cliente -> client55
+El worker -> worker1 ya lleva 26 trabajos: 
+Cliente -> client62 ha recibido respuesta ok
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client29
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client29 usando el frontend
+is colos
+	 Parte 0: client29
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client44
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client44 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client55
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client55 usando el frontend
+is colos
+	 Parte 0: client55
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client44
+Cliente -> client29 ha recibido respuesta ok
+	 Parte 2: ok
+Cliente -> client44 ha recibido respuesta ok
+El worker -> worker1 ha recibido trabajo del cliente -> client47
+El worker -> worker1 ya lleva 28 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client15
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client15 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client47
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client47 usando el frontend
+is colos
+	 Parte 0: client47
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+El worker -> worker3 ha recibido trabajo del cliente -> client30
+El worker -> worker3 ya lleva 28 trabajos: 
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client25 usando el frontend
+is colos
+El worker -> worker1 ha recibido trabajo del cliente -> client8
+El worker -> worker1 ya lleva 29 trabajos: 
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client30
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client30 usando el frontend
+is colos
+	 Parte 0: client30
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker1 con texto -> ok
+El worker -> worker3 ha recibido trabajo del cliente -> client12
+Cliente -> client47 ha recibido respuesta ok
+	 Parte 1: 
+El worker -> worker3 ya lleva 29 trabajos: 
+	 Parte 2: client8
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client8 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client12
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client12 usando el frontend
+is colos
+	 Parte 0: client12
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client30 ha recibido respuesta ok
+Cliente -> client12 ha recibido respuesta ok
+El worker -> worker1 ha recibido trabajo del cliente -> client43
 El worker -> worker3 ha recibido trabajo del cliente -> client5
-El worker -> worker3ya lleva 1 trabajos: 
+El worker -> worker1 ya lleva 30 trabajos: 
+El worker -> worker3 ya lleva 30 trabajos: 
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client13
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client13 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client43
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client43 usando el frontend
+is colos
+	 Parte 0: client43
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker2 ha recibido trabajo del cliente -> client40
+El worker -> worker1 ha recibido trabajo del cliente -> client11
+El worker -> worker2 ya lleva 28 trabajos: 
+El worker -> worker1 ya lleva 31 trabajos: 
 Request de worker -> worker3 con texto -> ok
 	 Parte 0: worker3
 	 Parte 1: 
@@ -49,180 +1849,235 @@ Request de worker -> worker3 con texto -> ok
 	 Parte 3: 
 	 Parte 4: ok
 Enviando respuesta de worker -> worker3 al cliente -> client5 usando el frontend
-	 Parte 0: client5
+is colos
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client40
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client40 usando el frontend
+is colos
+	 Parte 0: client40
+Cliente -> client43 ha recibido respuesta ok
 	 Parte 1: 
 	 Parte 2: ok
-El cliente client1 conectado a tcp:// localhost:5555
-Cliente -> client1 envia el mensaje -> ClientMSG ready true
-Cliente -> client5 ha recibido respuesta ok
-Request de cliente -> client1 con texto -> ClientMSG ready true
-	 Parte 0: client1
+El worker -> worker2 ha recibido trabajo del cliente -> client31
+El worker -> worker2 ya lleva 29 trabajos: 
+El worker -> worker3 ha recibido trabajo del cliente -> client39
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
 	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client1 al worker -> worker3 usando el backend
+	 Parte 2: client11
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client11 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client39
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client39 usando el frontend
+is colos
+	 Parte 0: client39
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client40 ha recibido respuesta ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client31
+Cliente -> client39 ha recibido respuesta ok
+El worker -> worker3 ha recibido trabajo del cliente -> client48
+El worker -> worker3 ya lleva 32 trabajos: 
+El worker -> worker1 ha recibido trabajo del cliente -> client37
+El worker -> worker1 ya lleva 32 trabajos: 
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client31 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client37
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker1 al cliente -> client37 usando el frontend
+is colos
+	 Parte 0: client37
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client48
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client48 usando el frontend
+is colos
+El worker -> worker2 ya lleva 30 trabajos: 
+	 Parte 0: client48
+	 Parte 1: 
+	 Parte 2: ok
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client32
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client32 usando el frontend
+is colos
+Cliente -> client37 ha recibido respuesta ok
+	 Parte 0: client32
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker2 ha recibido trabajo del cliente -> client22
+El worker -> worker2 ya lleva 31 trabajos: 
+Cliente -> client48 ha recibido respuesta ok
+Cliente -> client32 ha recibido respuesta ok
+El worker -> worker1 ha recibido trabajo del cliente -> client9
+El worker -> worker1 ya lleva 33 trabajos: 
 El worker -> worker3 ha recibido trabajo del cliente -> client1
-El worker -> worker3ya lleva 2 trabajos: 
-El cliente client3 conectado a tcp:// localhost:5555
-Request de worker -> worker3 con texto -> ok
-	 Parte 0: worker3
-	 Parte 1: 
-	 Parte 2: client1
-Cliente -> client3 envia el mensaje -> ClientMSG ready true
-	 Parte 3: 
-	 Parte 4: ok
-Enviando respuesta de worker -> worker3 al cliente -> client1 usando el frontend
-	 Parte 0: client1
-	 Parte 1: 
-	 Parte 2: ok
-Request de cliente -> client3 con texto -> ClientMSG ready true
-	 Parte 0: client3
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client3 al worker -> worker3 usando el backend
-El worker -> worker3 ha recibido trabajo del cliente -> client3
-El worker -> worker3ya lleva 3 trabajos: 
-Request de worker -> worker3 con texto -> ok
-	 Parte 0: worker3
-	 Parte 1: 
-	 Parte 2: client3
-	 Parte 3: 
-	 Parte 4: ok
-Enviando respuesta de worker -> worker3 al cliente -> client3 usando el frontend
-	 Parte 0: client3
-	 Parte 1: 
-	 Parte 2: ok
-Cliente -> client3 ha recibido respuesta ok
-Request de cliente -> client9 con texto -> ClientMSG ready true
-	 Parte 0: client9
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client9 al worker -> worker3 usando el backend
-El worker -> worker3 ha recibido trabajo del cliente -> client9
-El worker -> worker3ya lleva 4 trabajos: 
-Request de worker -> worker3 con texto -> ok
-	 Parte 0: worker3
+El worker -> worker3 ya lleva 33 trabajos: 
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
 	 Parte 1: 
 	 Parte 2: client9
 	 Parte 3: 
 	 Parte 4: ok
-Enviando respuesta de worker -> worker3 al cliente -> client9 usando el frontend
+Enviando respuesta de worker -> worker1 al cliente -> client9 usando el frontend
+is colos
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
+	 Parte 1: 
+	 Parte 2: client1
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker3 al cliente -> client1 usando el frontend
+is colos
+	 Parte 0: client1
+	 Parte 1: 
+	 Parte 2: ok
+El worker -> worker1 ha recibido trabajo del cliente -> client24
+El worker -> worker1 ya lleva 34 trabajos: 
+Request de worker -> worker2 con texto -> ok
+	 Parte 0: worker2
+	 Parte 1: 
+	 Parte 2: client22
+	 Parte 3: 
+	 Parte 4: ok
+Enviando respuesta de worker -> worker2 al cliente -> client22 usando el frontend
+is colos
+Request de worker -> worker1 con texto -> ok
+	 Parte 0: worker1
+	 Parte 1: 
+	 Parte 2: client24
+	 Parte 3: 
+Cliente -> client1 ha recibido respuesta ok
+Enviando respuesta de worker -> worker1 al cliente -> client24 usando el frontend
+	 Parte 0: client24
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client22
+	 Parte 1: 
+	 Parte 2: ok
 	 Parte 0: client9
 	 Parte 1: 
 	 Parte 2: ok
-Cliente -> client9 ha recibido respuesta ok
-Request de worker -> worker1 con texto -> ready
-	 Parte 0: worker1
-	 Parte 1: 
-	 Parte 2: ready
-Request de cliente -> client2 con texto -> ClientMSG ready true
-	 Parte 0: client2
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client2 al worker -> worker1 usando el backend
-El worker -> worker1 ha recibido trabajo del cliente -> client2
-El worker -> worker1ya lleva 1 trabajos: 
-Request de worker -> worker1 con texto -> ok
-	 Parte 0: worker1
-	 Parte 1: 
-	 Parte 2: client2
-	 Parte 3: 
-	 Parte 4: ok
-Enviando respuesta de worker -> worker1 al cliente -> client2 usando el frontend
-	 Parte 0: client2
+El worker -> worker2 ha recibido trabajo del cliente -> client18
+	 Parte 0: client31
 	 Parte 1: 
 	 Parte 2: ok
-Cliente -> client2 ha recibido respuesta ok
-Request de cliente -> client10 con texto -> ClientMSG ready true
-	 Parte 0: client10
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client10 al worker -> worker1 usando el backend
-El worker -> worker1 ha recibido trabajo del cliente -> client10
-El worker -> worker1ya lleva 2 trabajos: 
-Request de worker -> worker1 con texto -> ok
-	 Parte 0: worker1
-	 Parte 1: 
-	 Parte 2: client10
-	 Parte 3: 
-	 Parte 4: ok
-Enviando respuesta de worker -> worker1 al cliente -> client10 usando el frontend
-	 Parte 0: client10
+	 Parte 0: client11
 	 Parte 1: 
 	 Parte 2: ok
-Cliente -> client10 ha recibido respuesta ok
-Request de cliente -> client6 con texto -> ClientMSG ready true
-	 Parte 0: client6
+	 Parte 0: client5
 	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client6 al worker -> worker1 usando el backend
-El worker -> worker1 ha recibido trabajo del cliente -> client6
-El worker -> worker1ya lleva 3 trabajos: 
-Request de worker -> worker1 con texto -> ok
-	 Parte 0: worker1
+	 Parte 2: ok
+	 Parte 0: client13
+	 Parte 1: 
+El worker -> worker3 ha recibido trabajo del cliente -> client6
+	 Parte 2: ok
+El worker -> worker3 ya lleva 34 trabajos: 
+	 Parte 0: client8
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client25
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client15
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client61
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client4
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client19
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client53
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client28
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client27
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client17
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client69
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client73
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client87
+	 Parte 1: 
+	 Parte 2: ok
+	 Parte 0: client81
+	 Parte 1: 
+	 Parte 2: ok
+Cliente -> client22 ha recibido respuesta ok
+Cliente -> client13 ha recibido respuesta ok
+Cliente -> client15 ha recibido respuesta ok
+Cliente -> client8 ha recibido respuesta ok
+Cliente -> client11 ha recibido respuesta ok
+Cliente -> client28 ha recibido respuesta ok
+Cliente -> client4 ha recibido respuesta ok
+Cliente -> client25 ha recibido respuesta ok
+Cliente -> client19 ha recibido respuesta ok
+Cliente -> client61 ha recibido respuesta ok
+Cliente -> client53 ha recibido respuesta ok
+Cliente -> client17 ha recibido respuesta ok
+Cliente -> client69 ha recibido respuesta ok
+Cliente -> client81 ha recibido respuesta ok
+Request de worker -> worker3 con texto -> ok
+	 Parte 0: worker3
 	 Parte 1: 
 	 Parte 2: client6
 	 Parte 3: 
 	 Parte 4: ok
-Enviando respuesta de worker -> worker1 al cliente -> client6 usando el frontend
+Enviando respuesta de worker -> worker3 al cliente -> client6 usando el frontend
 	 Parte 0: client6
 	 Parte 1: 
 	 Parte 2: ok
-Cliente -> client6 ha recibido respuesta ok
-Request de cliente -> client8 con texto -> ClientMSG ready true
-	 Parte 0: client8
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client8 al worker -> worker1 usando el backend
-Request de cliente -> client4 con texto -> ClientMSG ready true
-	 Parte 0: client4
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client4 al worker -> worker3 usando el backend
-El worker -> worker1 ha recibido trabajo del cliente -> client8
-El worker -> worker1ya lleva 4 trabajos: 
-El worker -> worker3 ha recibido trabajo del cliente -> client4
-El worker -> worker3ya lleva 5 trabajos: 
-Request de worker -> worker1 con texto -> ok
-	 Parte 0: worker1
-	 Parte 1: 
-	 Parte 2: client8
-	 Parte 3: 
-	 Parte 4: ok
-Enviando respuesta de worker -> worker1 al cliente -> client8 usando el frontend
-	 Parte 0: client8
-	 Parte 1: 
-	 Parte 2: ok
-Request de worker -> worker3 con texto -> ok
-	 Parte 0: worker3
-	 Parte 1: 
-	 Parte 2: client4
-	 Parte 3: 
-	 Parte 4: ok
-Enviando respuesta de worker -> worker3 al cliente -> client4 usando el frontend
-	 Parte 0: client4
-	 Parte 1: 
-	 Parte 2: ok
-Cliente -> client8 ha recibido respuesta ok
-Cliente -> client4 ha recibido respuesta ok
-Request de worker -> worker2 con texto -> ready
-	 Parte 0: worker2
-	 Parte 1: 
-	 Parte 2: ready
-Request de cliente -> client7 con texto -> ClientMSG ready true
-	 Parte 0: client7
-	 Parte 1: 
-	 Parte 2: ClientMSG ready true
-Enviando peticion de cliente -> client7 al worker -> worker2 usando el backend
-El worker -> worker2 ha recibido trabajo del cliente -> client7
-El worker -> worker2ya lleva 1 trabajos: 
 Request de worker -> worker2 con texto -> ok
 	 Parte 0: worker2
 	 Parte 1: 
-	 Parte 2: client7
+	 Parte 2: client18
 	 Parte 3: 
 	 Parte 4: ok
-Enviando respuesta de worker -> worker2 al cliente -> client7 usando el frontend
-	 Parte 0: client7
+Enviando respuesta de worker -> worker2 al cliente -> client18 usando el frontend
+	 Parte 0: client18
+Cliente -> client73 ha recibido respuesta ok
 	 Parte 1: 
 	 Parte 2: ok
-Cliente -> client7 ha recibido respuesta ok
+Cliente -> client6 ha recibido respuesta ok
+Cliente -> client18 ha recibido respuesta ok
+Cliente -> client87 ha recibido respuesta ok

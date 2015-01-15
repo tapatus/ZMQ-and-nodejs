@@ -15,8 +15,10 @@ var zmq      = require('zmq'),
     pr = args[2], //puerto frontend
     pd = args[3], //puerto backend
     bul = args[4], //modo verbose
-    cola = [],
-    workers = []; //array de pares [worker_id trabajos_hechos] 
+
+    workers = [], //array de pares [worker_id trabajos_hechos] 
+    wi = 0, //indice de workers
+    clients = []; //array de clientes 
 
 frontend.bindSync('tcp://*:' + pr);
 backend.bindSync('tcp://*:' + pd);
@@ -40,7 +42,6 @@ frontend.on('message', function() {
     }
     else {
         console.log('no hay quien le atienda ahora');
-        cola.push(args);
         //encolar();
     }
 });
@@ -50,19 +51,9 @@ backend.on('message', function() {
     
     if (args[4] && args[4].toString() === 'ok') {
         bul ? verb('sr', null, null, args) : 0;
+        workers[args[0]].disp = 'ready';
         workers[args[0]].jobs += 1;
-        if (cola.length) {
-            var auxargs = cola.pop();
-            auxargs.unshift('');
-            auxargs.unshift(args[0]);
-            console.log('is colos');
-            backend.send(auxargs);
-        }
-        else {
-            workers[args[0]].disp = 'ready';
-        }
-        args = args.slice(2);
-        printa(args);
+        args = args.slice(2); printa(args);
         frontend.send(args);
     }
     
