@@ -28,4 +28,3 @@ requester.on('message', function(msg) {
 });
 console.log('Cliente -> ' + id + ' envia el mensaje -> ' + te);
 requester.send(te);
-

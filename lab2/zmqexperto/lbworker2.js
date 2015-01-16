@@ -24,18 +24,18 @@ console.log('El worker ' + id + ' ha enviado el primero mensaje -> ready')
 responder.send('ready'); //para darse de alta, decir q es disponible
 responder.on('message', function(msg) {
     var args = Array.apply(null, arguments);
-    bul ? verb('r', args) : 0;
+    (bul === 'true') ? verb('r', args) : 0;
     //hacer trabajo y al acabar notificar broker
     jobs += 1;
     args[2] = 'ok';
-    bul ? verb('s') : 0;
+    (bul === 'true') ? verb('s') : 0;
     responder.send(args); 
 });
 
 setTimeout(function () {
     responder.close();
     process.exit;
-}, 3000);
+},60000);
 
 //------------------------helper functions------------------------
 function printa (a) {

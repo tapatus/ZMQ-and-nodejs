@@ -92,11 +92,10 @@ function printa (a) {
 
 function buscaworker () {
     var w = null,
-        tjobs = 0; // un maximo 
+        minjobs = 99999; // un maximo 
     for (var i in workers) {
-        if (workers[i].disp === 'ready' && workers[i].jobs <= Math.round(tjobs/workers.length)) {
+        if (workers[i].disp === 'ready' && workers[i].jobs < minjobs) {
             w = i;
-            tjobs++;
         }
     }
     return w;

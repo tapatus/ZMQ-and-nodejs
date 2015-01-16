@@ -1,5 +1,5 @@
 /*------------------------Para probar, ejecute este comando-------------------
-node rrbroker.js 5555 5556
+ 
 */
 var args = process.argv;
 
@@ -15,10 +15,18 @@ var zmq      = require('zmq'),
     pr = args[2], //puerto frontend
     pd = args[3], //puerto backend
     bul = args[4], //modo verbose
-
+    cola = [],
     workers = [], //array de pares [worker_id trabajos_hechos] 
-    wi = 0, //indice de workers
-    clients = []; //array de clientes 
+    promesa = makeSender(backend);
+/*
+el cambio principal es aqui. Tenemos que crear tantas promesas iniciales como workers. En este caso de ejemplo 3.
+El worker es un socket req asi que nos hace peticiones a aqui al router del backend. Creando promesas aseguramos
+que cuando llegan las peticiones 'ready' del los workers, tengan asociado el handler. Pasamos un zero como para-
+metro porque no vamos a enviar nada, es un flag condicional.
+*/
+    promesa(0).then(function (a) {callback(a);});
+    promesa(0).then(function (a) {callback(a);});
+    promesa(0).then(function (a) {callback(a);});
 
 frontend.bindSync('tcp://*:' + pr);
 backend.bindSync('tcp://*:' + pd);
@@ -27,67 +35,81 @@ console.log('Backend en puerto ' + pd);
 
 frontend.on('message', function() {
     var args = Array.apply(null, arguments),
-        enw = buscaworker(),
         id = args[0].toString(),
+        enw = buscaworker(),
         te = args[2].toString();
     
-    bul ? verb('r', id, te, args) : 0;
+    
+    (bul === 'true') ? verb('r', id, te, args) : 0;
     if (enw !== null) {
         args.unshift('');
         args.unshift(enw);
         workers[enw].disp = 'ocupado';
-
-        bul ? verb('s', null, null, args) : 0;
-        backend.send(args);
+        
+        (bul === 'true') ? verb('s', null, null, args) : 0;
+        promesa(args).then(function (a) {callback(a);});
     }
     else {
         console.log('no hay quien le atienda ahora');
-        //encolar();
+        cola.push(args);
     }
 });
 
-backend.on('message', function() {
-    var args = Array.apply(null, arguments);
+
+
+//------------------------helper functions------------------------
+
+function callback(rep) {
+      var args = rep;
+      var cCola = function () {
+            var auxargs = cola.pop();
+            auxargs.unshift('');
+            auxargs.unshift(args[0]);
+            console.log('Cogiendo de la cola');
+            promesa(auxargs).then(function (a) {callback(a);});
+        };
     
     if (args[4] && args[4].toString() === 'ok') {
-        bul ? verb('sr', null, null, args) : 0;
-        workers[args[0]].disp = 'ready';
+        (bul === 'true') ? verb('sr', null, null, args) : 0;
         workers[args[0]].jobs += 1;
-        args = args.slice(2); printa(args);
+        if (cola.length) {
+            cCola();
+        }
+        else {
+            workers[args[0]].disp = 'ready';
+        }
+        args = args.slice(2);
+        //printa(args);
         frontend.send(args);
     }
     
-    else if (!estaya(args[0].toString())) {
-        bul ? verb('rw', null, null, args) : 0;
+    else if (args[2].toString() === 'ready') {
+        (bul === 'true') ? verb('rw', null, null, args) : 0;
         workers[args[0].toString()] = {
                 disp : args[2].toString(),
                 jobs : 0,
             };
+        if (cola.length) {
+            workers[args[0].toString()].disp = 'ocupado';
+            cCola();
+        }
     }
-});
+}
 
 
-//------------------------helper functions------------------------
 function printa (a) {
     a.map(function (a, i) {
         console.log('\t Parte ' + i + ': ' + a.toString()); 
     });
 }
-function estaya (a) {
-    for (var i in workers) {
-        if (workers[i] === a){
-            return true;
-        }
-    }
-    return false;
-}
 
 function buscaworker () {
     var w = null,
-        minjobs = 99999; // un maximo 
+        tjobs = 0; // jobs en total hechos 
     for (var i in workers) {
-        if (workers[i].disp === 'ready' && workers[i].jobs < minjobs) {
+        if (workers[i].disp === 'ready' && workers[i].jobs <= Math.round(tjobs/workers.length)) {
             w = i;
+            tjobs++;
         }
     }
     return w;
@@ -112,3 +134,28 @@ function verb (a, b, c, args) {
         printa(args);
     };
 }
+
+function makeSender (reqsock) {
+    var Promise = require('bluebird'),
+        promises = [];
+
+    reqsock.on('message', function (reply) {
+        var args = Array.apply(null, arguments);
+        args = args.toString().split(',');
+        promises.shift().resolve(args);
+    });
+    reqsock.on('error', function(reason) {
+        promises.shift().reject(reason);
+    });
+
+    return function (message) {
+        return new Promise(function (resolve, reject) {
+            promises.push({resolve: resolve, reject: reject});
+            if (message)
+                reqsock.send(message);
+            //mas generico, no tenemos que cerrar el socket usando su ref del scope global
+            this.reqsock = reqsock;
+        });
+    };
+}
+
