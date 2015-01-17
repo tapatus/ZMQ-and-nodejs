@@ -16,9 +16,6 @@ var zmq       = require('zmq'),
     id = args[3], //identificacin
     te = args[4]; //texto peticion
 
-    for (i = 5; i < args.length; i++) { //si texto peticion es mas de 1 palabra
-        te +=" " + args[i];
-    }
 requester.identity = id;
 requester.connect('tcp://' + re);
 console.log('El cliente ' + id + ' conectado a tcp:// ' + re);
@@ -50,7 +47,7 @@ function makeSender (reqsock) {
         promises.shift().reject(reason);
     });
 
-    return function (message) {
+   return function (message) {
         return new Promise(function (resolve, reject) {
             promises.push({resolve: resolve, reject: reject});
             reqsock.send(message);

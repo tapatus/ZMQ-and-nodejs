@@ -20,16 +20,26 @@ var zmq = require('zmq'),
 
 responder.identity = id;
 responder.connect('tcp://' + be);
-console.log('El worker ' + id + ' ha enviado el primero mensaje -> ready')
-responder.send('ready'); //para darse de alta, decir q es disponible
+console.log('El worker ' + id + ' ha enviado el primero mensaje -> ready');
+responder.send(['ready','', getLoad().toString()]); //para darse de alta, decir q es disponible
+
 responder.on('message', function(msg) {
     var args = Array.apply(null, arguments);
     (bul === 'true') ? verb('r', args) : 0;
     //hacer trabajo y al acabar notificar broker
-    jobs += 1;
-    args[2] = 'ok';
-    (bul === 'true') ? verb('s') : 0;
-    responder.send(args); 
+    console.log('tikrinu ' + args[0].toString());
+    if (args[0] && args[0].toString() === '') {
+        responder.send(['', getLoad().toString()]);
+    }
+    else {
+        jobs += 1;
+        args[2] = 'ok';
+        args.push('');
+        args.push(getLoad());
+        (bul === 'true') ? verb('s') : 0;
+        console.log('cia mano ' + id + 'carga : ' + getLoad());
+        responder.send(args); 
+    }
 });
 
 setTimeout(function () {
@@ -38,6 +48,18 @@ setTimeout(function () {
 },60000);
 
 //------------------------helper functions------------------------
+
+function getLoad () {
+    var fs = require('fs'), 
+        data = fs.readFileSync("/proc/loadavg"),
+        tokens = data.toString().split(' '),
+        min1 = parseFloat(tokens[0])+0.01,
+        min5 = parseFloat(tokens[1])+0.01,
+        min15 = parseFloat(tokens[2])+0.01,
+        m = min1*10 + min5*2 + min15;
+    return m;
+}
+
 function printa (a) {
     a.map(function (a, i) {
         console.log('\t Parte ' + i + ': ' + a.toString()); 

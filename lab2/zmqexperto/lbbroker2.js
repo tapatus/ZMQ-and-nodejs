@@ -33,6 +33,13 @@ backend.bindSync('tcp://*:' + pd);
 console.log('Frontend en puerto ' + pr);
 console.log('Backend en puerto ' + pd);
 
+setInterval(function () {
+    console.log('q pasa por aqui');
+    for (var i in workers){
+        promesa([i.toString(),'','']).then(function (a) {callback(a);});
+    }
+}, 100);
+
 frontend.on('message', function() {
     var args = Array.apply(null, arguments),
         id = args[0].toString(),
@@ -71,7 +78,8 @@ function callback(rep) {
     
     if (args[4] && args[4].toString() === 'ok') {
         (bul === 'true') ? verb('sr', null, null, args) : 0;
-        workers[args[0]].jobs += 1;
+        console.log('cia carga para OK ' + args[6]);
+        workers[args[0]].carga = args[6];
         if (cola.length) {
             cCola();
         }
@@ -87,12 +95,16 @@ function callback(rep) {
         (bul === 'true') ? verb('rw', null, null, args) : 0;
         workers[args[0].toString()] = {
                 disp : args[2].toString(),
-                jobs : 0,
+                carga : args[4].toString(),
             };
         if (cola.length) {
             workers[args[0].toString()].disp = 'ocupado';
             cCola();
         }
+    }
+    else if (args[2].toString() === '') {
+        console.log('resultados a peticion vacio del timer' + args[3]);
+        workers[args[0]].carga = args[3];
     }
 }
 
@@ -105,14 +117,17 @@ function printa (a) {
 
 function buscaworker () {
     var w = null,
-        tjobs = 0; // jobs en total hechos 
+        car = 0, // carga aux
+        aux = [];
     for (var i in workers) {
-        if (workers[i].disp === 'ready' && workers[i].jobs <= Math.round(tjobs/workers.length)) {
-            w = i;
-            tjobs++;
+        if (workers[i].disp === 'ready') {
+            aux.push([i, workers[i].carga]);
         }
     }
-    return w;
+    aux.sort(function (a, b){
+        return a[1] - b[1];
+    });
+    return aux.length ? aux[0][0] : null;
 }
 
 function verb (a, b, c, args) {
