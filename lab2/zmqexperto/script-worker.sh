@@ -7,7 +7,7 @@ while [ $number -lt $1 ]; do
     node lbworker2.js localhost:5556 worker$number WorkerOK ready true &
 done
 
-node lbbroker2.js 5555 5556 true &
+node lbbroker2.js 5555 5556 5557 true &
 
 number=0
 while [ $number -lt $2 ]; do

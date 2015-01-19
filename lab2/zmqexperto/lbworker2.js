@@ -23,12 +23,10 @@ responder.connect('tcp://' + be);
 console.log('El worker ' + id + ' ha enviado el primero mensaje -> ready');
 responder.send(['ready','', getLoad().toString()]); //para darse de alta, decir q es disponible
 
-responder.on('message', function(msg) {
+responder.on('message', function() {
     var args = Array.apply(null, arguments);
-    (bul === 'true') ? verb('r', args) : 0;
-    //hacer trabajo y al acabar notificar broker
-    console.log('tikrinu ' + args[0].toString());
     if (args[0] && args[0].toString() === '') {
+        console.log('enviamos nuestra carga a peticion temporal del broker ' + args[0].toString());
         responder.send(['', getLoad().toString()]);
     }
     else {

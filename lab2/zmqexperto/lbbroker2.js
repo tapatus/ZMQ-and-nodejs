@@ -12,33 +12,41 @@ if (args.length < 5) {
 var zmq      = require('zmq'),
     frontend = zmq.socket('router'),
     backend  = zmq.socket('router'),
+    confsock = zmq.socket('rep'),
     pr = args[2], //puerto frontend
     pd = args[3], //puerto backend
-    bul = args[4], //modo verbose
+    pc = args[4], //puerto socket para request de configuracion
+    bul = args[5], //modo verbose
     cola = [],
-    workers = [], //array de pares [worker_id trabajos_hechos] 
-    promesa = makeSender(backend);
+    workers = [], //array de pares [worker_id trabajos_hechos],
+    tjobs = 0, // total de trabajos que llevan entre todos los trabajadores
+    promesa = makeSender(backend),
+    confpromesa = makeSender(confsock),
+    tim, //el timer, temporizador de la peticion de la carga
+    distr = 'lowerLoad', //distribucion 
+    adjf = 0, // adjust factor
+    per = 200, // periodicity
+    llw = 0;// low load workers
 /*
 el cambio principal es aqui. Tenemos que crear tantas promesas iniciales como workers. En este caso de ejemplo 3.
 El worker es un socket req asi que nos hace peticiones a aqui al router del backend. Creando promesas aseguramos
 que cuando llegan las peticiones 'ready' del los workers, tengan asociado el handler. Pasamos un zero como para-
 metro porque no vamos a enviar nada, es un flag condicional.
 */
-    promesa(0).then(function (a) {callback(a);});
-    promesa(0).then(function (a) {callback(a);});
-    promesa(0).then(function (a) {callback(a);});
 
+promesa(0).then(callback);
+promesa(0).then(callback);
+promesa(0).then(callback);
+
+confpromesa(0).then(fconfig);
+
+confsock.bind('tcp://*:' + pc);
 frontend.bindSync('tcp://*:' + pr);
 backend.bindSync('tcp://*:' + pd);
 console.log('Frontend en puerto ' + pr);
 console.log('Backend en puerto ' + pd);
 
-setInterval(function () {
-    console.log('q pasa por aqui');
-    for (var i in workers){
-        promesa([i.toString(),'','']).then(function (a) {callback(a);});
-    }
-}, 100);
+tim = setInterval(pcarg, per);
 
 frontend.on('message', function() {
     var args = Array.apply(null, arguments),
@@ -54,7 +62,7 @@ frontend.on('message', function() {
         workers[enw].disp = 'ocupado';
         
         (bul === 'true') ? verb('s', null, null, args) : 0;
-        promesa(args).then(function (a) {callback(a);});
+        promesa(args).then(callback);
     }
     else {
         console.log('no hay quien le atienda ahora');
@@ -66,18 +74,49 @@ frontend.on('message', function() {
 
 //------------------------helper functions------------------------
 
-function callback(rep) {
-      var args = rep;
-      var cCola = function () {
-            var auxargs = cola.pop();
-            auxargs.unshift('');
-            auxargs.unshift(args[0]);
-            console.log('Cogiendo de la cola');
-            promesa(auxargs).then(function (a) {callback(a);});
-        };
+function pcarg () { //function que pide carga cada tanto (lo que indica el temporizador )
+    console.log('enviando cada ' + per);
+    for (var i in workers){
+        promesa([i.toString(),'','']).then(callback);
+    }
+}
+
+function fconfig (a) {
+    var args = [].slice.call(a);
+    // console.log('cia json arrejus ' + args[0]);
+    var ob = JSON.parse(args[0]);
+    console.log('cia json distribution ' + ob.distribution);
+    if (ob.distribution === 'equitable') {
+        clearInterval(tim);
+        console.log('ahora busca con equitable');
+        distr = ob.distribution;
+        adjf = ob.adjustFactor;
+    }
+    else if (ob.distribution === 'lowerLoad'){
+        if (distr === 'equitable') {
+            tim = setInterval(pcarg, ob.periodicity);
+        }
+        distr = ob.distribution;
+        per = ob.periodicity;
+        llw = ob.lowLoadWorkers;
+    }
+    confpromesa('Cuando quieras puedes enviar otro!').then(fconfig);
+    // console.log('cia json ' + JSON.parse(args[0]));
+}
+function callback(a) {
+    var args = [].slice.call(a),
+    cCola = function () {
+        var auxargs = cola.pop();
+        auxargs.unshift('');
+        auxargs.unshift(args[0]);
+        console.log('Cogiendo de la cola');
+        promesa(auxargs).then(callback);
+    };
     
     if (args[4] && args[4].toString() === 'ok') {
         (bul === 'true') ? verb('sr', null, null, args) : 0;
+        workers[args[0]].jobs += 1;
+        tjobs++;
         console.log('cia carga para OK ' + args[6]);
         workers[args[0]].carga = args[6];
         if (cola.length) {
@@ -94,9 +133,10 @@ function callback(rep) {
     else if (args[2].toString() === 'ready') {
         (bul === 'true') ? verb('rw', null, null, args) : 0;
         workers[args[0].toString()] = {
-                disp : args[2].toString(),
-                carga : args[4].toString(),
-            };
+            disp : args[2].toString(),
+            carga : args[4].toString(),
+            jobs : 0
+        };
         if (cola.length) {
             workers[args[0].toString()].disp = 'ocupado';
             cCola();
@@ -116,9 +156,30 @@ function printa (a) {
 }
 
 function buscaworker () {
+    if (distr === 'equitable') {
+        return buscaequi();
+    }
+    else {
+        return buscalow();
+    }
+}
+
+function buscaequi () {
+    var w;
+    for (var i in workers) {
+        if (workers[i].disp === 'ready' && workers[i].jobs <= Math.round(tjobs/workers.length)) {
+            w = i;
+            tjobs++;
+        }
+    }
+    return w;
+}
+
+function buscalow () {
     var w = null,
         car = 0, // carga aux
-        aux = [];
+        aux = [],
+        x;
     for (var i in workers) {
         if (workers[i].disp === 'ready') {
             aux.push([i, workers[i].carga]);
@@ -127,6 +188,8 @@ function buscaworker () {
     aux.sort(function (a, b){
         return a[1] - b[1];
     });
+    //devuelve algun indice entre 0, 1, 2 si confob.llw vale 3; 0, 1 si vale 2; 0 si vale uno. Los workers estan ordenadados en la variable aux segun la carga de trabaja hecha.
+    x = Math.floor(Math.random() * llw); 
     return aux.length ? aux[0][0] : null;
 }
 
@@ -154,10 +217,11 @@ function makeSender (reqsock) {
     var Promise = require('bluebird'),
         promises = [];
 
-    reqsock.on('message', function (reply) {
-        var args = Array.apply(null, arguments);
-        args = args.toString().split(',');
-        promises.shift().resolve(args);
+    reqsock.on('message', function () {
+        // var args = [].slice.call(arguments);
+        // var args = Array.apply(null, arguments);
+        // args = args.toString().split(',');
+        promises.shift().resolve(arguments);
     });
     reqsock.on('error', function(reason) {
         promises.shift().reject(reason);
