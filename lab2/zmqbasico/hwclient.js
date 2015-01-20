@@ -13,7 +13,7 @@ var zmq = require('zmq'),
     i,
     se = args[2], //server endpoint
     np = args[3], //numero de peticiones a enviar
-    te = args[4] || ''; //texto peticion
+    te = args[4] || ' '; //texto peticion
 
     for (i = 5; i < args.length; i++) { //si texto, mensaje de mas es mas de 1 palabra
         te +=" " + args[i];

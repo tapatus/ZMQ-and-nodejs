@@ -1,6 +1,4 @@
-/*------------------------Para probar, ejecute este comando-------------------
-node rrworker.js localhost:5556 1 I am worker one/two
-*/
+
 var args = process.argv;
 
 //si argumentos son menos de los necesitados

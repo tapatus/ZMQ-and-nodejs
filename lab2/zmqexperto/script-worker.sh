@@ -1,5 +1,6 @@
 #!/bin/bash
-
+#se usa asi
+#*sh script-worker.sh <numero_de_workers> <numero_de_clientes> > output_del_fichero_donde_escribira_el_modo_verbose*
 number=0
 while [ $number -lt $1 ]; do
     echo "Worker $number"

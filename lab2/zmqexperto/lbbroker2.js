@@ -1,6 +1,4 @@
-/*------------------------Para probar, ejecute este comando-------------------
- 
-*/
+
 var args = process.argv;
 
 //si argumentos son menos de los necesitados

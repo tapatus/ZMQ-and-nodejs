@@ -13,7 +13,7 @@ var zmq = require('zmq'),
     i,
     se = args[2], //port
     ns = args[3] * 1000, //numero de segundo a esperar
-    te = args[4] || ''; //texto respuesta
+    te = args[4] || ' '; //texto respuesta
 
     for (i = 5; i < args.length; i++) { //si texto es mas de 1 palabra
         te +=" " + args[i];

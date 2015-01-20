@@ -1,6 +1,4 @@
-/*------------------------Para probar, ejecute este comando-------------------
-node rrclient.js localhost:5555 ident1 This is msg
-*/
+
 
 var args = process.argv;
 

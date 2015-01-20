@@ -1,6 +1,3 @@
-/*------------------------Para probar, ejecute este comando-------------------
-node rrbroker.js 5555 5556
-*/
 var args = process.argv;
 
 //si argumentos son menos de los necesitados

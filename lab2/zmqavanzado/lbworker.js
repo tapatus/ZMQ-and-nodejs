@@ -1,6 +1,3 @@
-/*------------------------Para probar, ejecute este comando-------------------
-node rrworker.js localhost:5556 1 I am worker one/two
-*/
 var args = process.argv;
 
 //si argumentos son menos de los necesitados
@@ -21,13 +18,13 @@ var zmq = require('zmq'),
 responder.identity = id;
 responder.connect('tcp://' + be);
 console.log('El worker ' + id + ' ha enviado el primero mensaje -> ready')
-responder.send('ready'); //para darse de alta, decir q es disponible
+responder.send(td); //para darse de alta, decir q es disponible
 responder.on('message', function(msg) {
     var args = Array.apply(null, arguments);
     (bul === 'true') ? verb('r', args) : 0;
     //hacer trabajo y al acabar notificar broker
     jobs += 1;
-    args[2] = 'ok';
+    args[2] = ta;
     (bul === 'true') ? verb('s') : 0;
     responder.send(args); 
 });
@@ -35,7 +32,7 @@ responder.on('message', function(msg) {
 setTimeout(function () {
     responder.close();
     process.exit;
-},60000);
+},50000);
 
 //------------------------helper functions------------------------
 function printa (a) {
