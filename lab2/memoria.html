@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Lo primero para hacer esta practica necesitamos instalar la libreria binaria de ZMQ. ZMQ es eso - libreria binaria que nos ofrece un cantidad de patrones de sockets. No es una framework etc. Una vez tenemos el paquete zmq binario instalado en nuestro sistema operativo, tenemos que instalar modulo de nodejs para que nuestros scrips de nodejs puedan 'hablar' con el zmq.</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="Lo primero para hacer esta practica necesitamos instalar la libreria binaria de ZMQ. ZMQ es eso - libreria binaria que nos ofrece un cantidad de patrones de sockets. No es una framework etc. Una vez tenemos el paquete zmq binario instalado en nuestro sistema operativo, tenemos que instalar modulo de nodejs para que nuestros scrips de nodejs puedan 'hablar' con el zmq."/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2015-01-20T20:30+0100"/>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Lo primero para hacer esta practica necesitamos instalar la libreria binaria de ZMQ. ZMQ es eso - libreria binaria que nos ofrece un cantidad de patrones de sockets. No es una framework etc. Una vez tenemos el paquete zmq binario instalado en nuestro sistema operativo, tenemos que instalar modulo de nodejs para que nuestros scrips de nodejs puedan 'hablar' con el zmq.</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Basico</a>
+<ul>
+<li><a href="#sec-1-1">1.1 REQ - REP patron.</a></li>
+<li><a href="#sec-1-2">1.2 ROUTER - DEALER</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Avanzado</a></li>
+<li><a href="#sec-3">3 Experto</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Basico</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> REQ - REP patron.</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>En este patron de comunicacion hemos complimentado los ejemplos ofrecidos <i>hwclient.js</i>, <i>hwserver.js</i> con la posibilidad de pasarle los parametros ejecuntando los scripts en la linea de comandos. Asi que ejecuntado el cliente le pasamos la url del servidor, el numero de peticiones a enviar y el texto a enviar. Al servidor le pasamos el puerto, el cual usamos para hacer bind sobre todas las interfaces usando <b>el<sub>socket</sub><sub>rep</sub>.bind('tcp://*puerto) sintaxis, y el texto de respuesta. El texto tanto en cliente como en el servidor puede ser un espacio en blanco o un texto de mas de 1 palabra con espacios entre ellos y sin englobarlos en las comillas. Usamos la tecnica short-circuit para asignar el espacio en blanco en caso de no pasar el ningun texto. /te = args<sup><a class="footref" name="fnr-.1" href="#fn-.1">1</a></sup> || ' ';/ *</b>  PUB - SUB 
+En este patron hay un publisher que hace bind y suscribers que hacen connect. En el subscriptor anadimos posibilidad de pasar por parametros la url de publisher y el descriptor de tipo de mensajes o los quieren suscribirse. En el publisher enviamos por argumentos puerto al que tendra que hacer el bind, numero de mensajes a publicar, descriptores de 2 tipos a publicar. El publisher publica la misma cantidad de mensajes de los tipos especificados y cada mensaje consiste en la concatenacion de tipo de descriptor de mensaje y un numero aleatorio. Los suscriptores se conectaran al publisher y ademas haran <i>subscribe(tipo<sub>de</sub><sub>descriptor</sub>)</i> para filtar mensajes que han indicado con el ultimo argumento.
+</p></div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> ROUTER - DEALER</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>En este caso nuestro cliente sigue usando el socket req, pero ahora se conecta y envia las peticiones al router y no directamente al servidor. El servidor, en este caso es el worker, sigue siendo el socket rep pero esta vez se conecta al broker. Asi que el broker inicia dos sockets, uno para que le envien los requests los clientes, y otro para conectarse al worker y enviarle las mismos requests recibidos por de clientes. Entonces, el socket de zmq <i>router</i> es el que usa para conectarse con los clientes, ya que es un socket rep asincrono que el broker recibira los requests de los clientes. Para conectarse al worker, creara un socket de tipo <i>dealer</i> ya que es un socket req asincrono y enviara por el los requests que el worker con su socket rep va a consumir. El cliente terminara cuando reciba la respuesta, mientras el broker y worker seguiran esperando ejecutandose. El zmq tiene un ventaja muy importante en el mercado de 'sockets' ya que el reparto lo hace de manera equitativa. Ya sea muchos clientes - pocos servidores, o muchos servidores - pocos clientes. En los dos caso el trabajo o las peticiones se repartiran de manera equitativa, nadie va a estar esperando mientras otros sean atendidos mas de una vez, ni tampoco estaran trabajando mas que otros (caso de servidores).
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Avanzado</h2>
+<div class="outline-text-2" id="text-2">
+
+<p>El cliente aqui recibira 3 argumentos: url del router, su identidad, el mensaje. Enviara un mensaje al frontend del router, al que se conectara con un socket req pasandole la url. Como es obvio el socket req una vez envia un request se para y no hace nada mas hasta que no reciba las respuesta. En nuestro caso cuando reciba la respuesta, termineremos el script de cliente.
+</p>
+<p>
+El worker recibira estos argumentos: url del backend del router, su identidad, texto diciendo que es disponible, texto de respuesta una vez haya acabado el trabajo, true/false para activar/desactivar el modo verbose. Esta vez el worker usara el socket req, asi que el router tendra dos sockets router (una para frontend y otra para el backend). El worker al iniciarse enviara un request para darse de alta. Tanto en script de worker como en el cliente usamos la propiedad <i>identity</i> del socket para generar las identidades enviaremos encapsulados al broker y este las usara apropiadamente. En el cliente usamos un array para guardar la cantidad de  trabajos hechos por el worker, y lo vamos imprimiendo cada vez en casa de que le modo verbose este activo.
+</p>
+<p>
+El broker crea 2 socket <i>router</i> para recibir los requests asincronamente de los clientes y workers. Como el worker envia un request cuando se inicia, el broker capta ese mensaje por el backend. Cuando el worker req envia una request, el broker recibe ese request con el mensaje enviado + delimitador + identidad de worker (todo apilado). Entonces, en los mas alto de la 'pila' (pila = [].call.slice(arguments)) tenemos el string con la identidad del worker, luego un delimitador '', y luego el string 'ready' que indica al broker que le worker esta preparado para recibir el trabajo. Anadimos ese worker al nuestro array <i>workers</i> como un objeto con dos propiedades (disp, jobs). Uno indica si es disponible o no (valores: ready/ocupado) y otro los trabajos que lleva hechos.
+Ahora cuando recibimos un request de un cliente por el frontend, llamamos a la funcion buscaworker que mira hay un worker disponible para atender el request. En el caso de que alla, apilamos el mensaje recibido del cliente con el delimitador + identidad del worker que nos devolvio la function buscaworker. Ponemos la propiedad disp de este worker en nuestro array workers a 'ocupado'. Enviamos el nuevo mensaje constuido al worker para que haga el trabajo. Podemos enviarlo porque el worker hizo el primer request dandose de alta y ahora estara esperando el reply en su socket req. Si no hay worker disponible, entonces el mensaje del cliente lo apilamos a una array llamado cola.
+Cuando el worker recibe el mensaje del cliente reenviado por el backend del broker pone un string 'ok' en el lugar del texto de mensaje del cliente y lo envia al broker. Ahora el broker, recibe un mensaje con un 'ok' y lo reenvia al cliente, quitandole la identidad del worker y el delimitador <i>args = args.slice(2);</i>, que estara esperando la respuesta el su socket req.
+En los casos cuando el broker recibe un 'ready' o 'ok' del worker, siempre miramos si hay algun request en nuestro array cola. Si hay, le enviamos a ese worker un trabajo de la cola.
+Hemos escrito nuestra function <i>showArguments</i>, <i>randnumber</i> por eso no importamos el modulo auxfuntions.js
+Asignamos a la propiedad de identidad de sockets de cliente y worker las identidades pasados por argumentos.
+El script <i>script-worker.sh</i> se usa asi <b>sh script-worker.sh &lt;numero<sub>de</sub><sub>workers&gt</sub>; &lt;numero<sub>de</sub><sub>clientes&gt</sub>; &gt; output<sub>del</sub><sub>fichero</sub><sub>donde</sub><sub>escribira</sub><sub>el</sub><sub>modo</sub><sub>verbose</sub></b>. Hemos probado con 3 trabajadores y 10, 100, 200, 400, 800 workers. Una vez ejecutado el script los clientes acabando quedando proceso node de broker y n procesos de workers pasados por argumento. Hay un timer en worker que pasado el tiempo mata su proceso. Incluimos el fichero <i>output</i> con la traza de 3 y 50 trabajadores.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Experto</h2>
+<div class="outline-text-2" id="text-3">
+
+<p>Aqui hemos mejorado las cosas hechas en el apartado avanzado con usando promesas, escribiendo algoritmos en la funcion buscaworker para escoger el worker usando load balancing, y un script lbconfig2.js que configura el broker dinamicamente.
+En el cliente creamos la promesa usando la funcion propuesta por el enunciado: <i>makeSender(socket)(message).then(callback)</i>. Una de las ventajas de las promesas es que podemos asignar la function handler/callback despues que haya ocurrido el evento sobre el que estuvimos eschuchando. En el caso de la gestion de promesas del broker al worker: Tenemos que crear tantas promesas iniciales como workers. En el caso contrario cuando el worker hace un request no hay un evento de creado todavia en el broker para escuchar a ese request. En este caso de ejemplo 3. El worker es un socket req asi que nos hace peticiones a aqui al router del backend. Creando promesas aseguramos que cuando llegan las peticiones 'ready' del los workers, tengan asociado el handler. Pasamos un zero como para- metro porque no vamos a enviar nada, es un flag condicional. En el codigo se ve mejor lo hecho.
+Aqui, cada trabajador con cada mensaje enviado, sea 'ok' o 'ready', enviara su carga que usara la funcion getload para eso. Apilamos un delimitador, y la carga calculada. Aunque en este caso no hace falta el delimitador, lo ponemos para asi mejor ver los mensajes que produce el modo verbose. Hay un temporador que hace que el broker envie mensajes nulos (lo representamos asi '') a los workers del array workers. En el worker recibimos ese mensaje nulo y enviamos como respuesta la carga precedida con un '' simbolizando mensaje nulo (tambien por el motivo de verbose). En el broker un vez recibimos los mensajes de los workers, extreamos la carga y la asignamos a cada worker como propiedad carga: <i>workers[args<sup><a class="footref" name="fnr-.2" href="#fn-.2">2</a></sup>].carga = args<sup><a class="footref" name="fnr-.3" href="#fn-.3">3</a></sup>;</i>
+El algoritmo usado para elegir el worker segun la carga se ve en la funcion <i>buscalow</i>.
+</p>
+<p>
+En el broker creamos un socket de rep para recibir informacion del lbconfig2.js. Creamos asi <i>confpromesa(0).then(fconfig);</i> una promesa que ejecuta fconfig funcion cuando el lbconfig2 nos envie su request. lbconfig2 usa un socket req, empaqueta los argumentos pasados, los pone en un objeto, lo pasa por el JSON.stringify() y envia al broker. El broker ejecuta fconfig que refleja en su codigo lo que hace. Si le ha pasado tipo de configuracion 'equitable' entonces, hace clearInterval al temporador que pide carga cada tanto. Despues de ejecutar lo adecuado a la peticion de lbconfig2 en la funcion fconfig acabamos con la instruccion <i>confpromesa('Cuando quieras puedes enviar otro!').then(fconfig);</i> asi enviando al script de lbconfig2 su respuesta esperada (ya q es socket req y no avanza hasta que no reciba el reply) y al vez creando promesa para esperar a otro request de configuracion. En la busqueda de worker en el modo 'equitable' usamos el algoritmo en el cual usamos los jobs hechos por worker y los jobs hechos en total. Usamos la descviacion de media para decidir si cogemos al worker o no.
+</p>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+<p class="footnote"><sup><a class="footnum" name="fn-.1" href="#fnr-.1">1</a></sup> DEFINITION NOT FOUND: 4
+</p>
+
+<p class="footnote"><sup><a class="footnum" name="fn-.2" href="#fnr-.2">2</a></sup> DEFINITION NOT FOUND: 0
+</p>
+
+<p class="footnote"><sup><a class="footnum" name="fn-.3" href="#fnr-.3">3</a></sup> DEFINITION NOT FOUND: 6
+</p></div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2015-01-20T20:30+0100</p>
+<p class="author">Author: </p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
