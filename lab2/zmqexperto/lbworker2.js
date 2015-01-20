@@ -20,8 +20,8 @@ var zmq = require('zmq'),
 
 responder.identity = id;
 responder.connect('tcp://' + be);
-console.log('El worker ' + id + ' ha enviado el primero mensaje -> ready');
-responder.send(['ready','', getLoad().toString()]); //para darse de alta, decir q es disponible
+console.log('El worker ' + id + ' ha enviado el primero mensaje -> ' + td);
+responder.send([td,'', getLoad().toString()]); //para darse de alta, decir q es disponible
 
 responder.on('message', function() {
     var args = Array.apply(null, arguments);
@@ -31,7 +31,7 @@ responder.on('message', function() {
     }
     else {
         jobs += 1;
-        args[2] = 'ok';
+        args[2] = ta;
         args.push('');
         args.push(getLoad());
         (bul === 'true') ? verb('s') : 0;

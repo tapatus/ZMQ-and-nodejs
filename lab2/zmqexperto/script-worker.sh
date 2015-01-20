@@ -4,7 +4,7 @@ number=0
 while [ $number -lt $1 ]; do
     echo "Worker $number"
     number=$((number + 1))
-    node lbworker2.js localhost:5556 worker$number WorkerOK ready true &
+    node lbworker2.js localhost:5556 worker$number ready ok true &
 done
 
 node lbbroker2.js 5555 5556 5557 true &
